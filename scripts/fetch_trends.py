@@ -11,7 +11,7 @@ from pytrends.request import TrendReq
 BATCH_SIZE = int(os.getenv('BATCH_SIZE', 75))
 DELAY_MIN = 3
 DELAY_MAX = 6
-MAX_RETRIES = 2
+MAX_RETRIES = 3
 TERMS_QUEUE_FILE = 'data/terms_queue.txt'
 PROCESSED_FILE = 'processed_terms.txt'
 DATA_DIR = Path('data/trends_results')
@@ -111,6 +111,16 @@ def fetch_trend_data(pytrends, term, retries=0):
             logger.error(f"🚫 Rate limit hit (429) on term: {term}")
             raise Exception("RATE_LIMIT")
         
+        # Check for timeout errors
+        if 'ReadTimeout' in error_msg or 'ConnectTimeout' in error_msg or 'timeout' in error_msg.lower():
+            logger.warning(f"⏱️  Timeout on {term}, retry {retries+1}/{MAX_RETRIES}")
+            if retries < MAX_RETRIES:
+                time.sleep(random.uniform(10, 15))  # Longer wait for timeouts
+                return fetch_trend_data(pytrends, term, retries + 1)
+            else:
+                logger.error(f"✗ Failed {term} after {MAX_RETRIES} timeout retries")
+                return None
+        
         # Retry on other errors
         if retries < MAX_RETRIES:
             logger.warning(f"Error fetching {term}, retry {retries+1}/{MAX_RETRIES}: {error_msg}")
@@ -142,8 +152,8 @@ def main():
     batch = pending_terms[:BATCH_SIZE]
     logger.info(f"Processing batch of {len(batch)} terms")
     
-    # Initialize pytrends
-    pytrends = TrendReq(hl='en-US', tz=360, timeout=(10, 25), retries=2, backoff_factor=0.5)
+    # Initialize pytrends with longer timeout
+    pytrends = TrendReq(hl='en-US', tz=360, timeout=(30, 60), retries=3, backoff_factor=1.0)
     
     # Process terms
     all_results = []

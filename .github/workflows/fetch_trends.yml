@@ -13,6 +13,9 @@ on:
         required: false
         default: '75'
 
+permissions:
+  contents: write
+  
 jobs:
   fetch-trends:
     runs-on: ubuntu-latest

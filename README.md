@@ -1,0 +1,2 @@
+# google-trends-automation
+

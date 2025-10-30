@@ -212,9 +212,9 @@ def main():
         logger.info("⚠️  Rate limit hit - will resume on next scheduled run")
     logger.info("=" * 60)
     
-    # Exit with error code if rate limit hit (for monitoring)
+    # Exit with warning code if rate limit hit (for monitoring)
     if rate_limit_hit:
-        exit(1)
+        logger.warning("Rate limit hit - will resume on next run")
 
 
 if __name__ == '__main__':

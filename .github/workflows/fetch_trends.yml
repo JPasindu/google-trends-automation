@@ -62,8 +62,8 @@ jobs:
         retention-days: 30
 
     - name: Send summary email
-      if: always()   # send even if job fails
-      uses: dawidd6/action-send-mail@v3
+      if: always()   
+      uses: dawidd6/action-send-mail@v4
       with:
         server_address: smtp.gmail.com
         server_port: 587

@@ -11,7 +11,7 @@ on:
       batch_size:
         description: 'Number of terms to process'
         required: false
-        default: '75'
+        default: '25'
 
 permissions:
   contents: write

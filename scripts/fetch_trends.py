@@ -80,8 +80,8 @@ def fetch_trend_data(pytrends, term, retries=0):
         pytrends.build_payload(
             [term],
             cat=0,
-            timeframe='today 12-m',  # Last 12 months
-            geo='',  # Worldwide
+            timeframe='2012-01-01 2025-10-31', 
+            geo='LK', 
             gprop=''
         )
         
@@ -211,11 +211,3 @@ def main():
     if rate_limit_hit:
         logger.info("⚠️  Rate limit hit - will resume on next scheduled run")
     logger.info("=" * 60)
-    
-    # Exit with error code if rate limit hit (for monitoring)
-    if rate_limit_hit:
-        exit(1)
-
-
-if __name__ == '__main__':
-    main()

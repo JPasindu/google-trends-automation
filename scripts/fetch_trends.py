@@ -57,8 +57,8 @@ def fetch_trend_data(pytrends, term, retries=0):
         pytrends.build_payload(
             [term],
             cat=0,
-            timeframe='today 12-m',
-            geo='',
+            timeframe='2012-01-01 today',
+            geo='LK',
             gprop=''
         )
         

@@ -2,8 +2,8 @@ name: Fetch Google Trends Data
 
 on:
   schedule:
-    # Runs every 4 hours 
-    - cron: '0 */4 * * *'
+    # Runs every 6 hours (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
   
   # Allow manual triggering for testing
   workflow_dispatch:
@@ -11,78 +11,50 @@ on:
       batch_size:
         description: 'Number of terms to process'
         required: false
-        default: '25'
+        default: '75'
 
-permissions:
-  contents: write
-  
 jobs:
   fetch-trends:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      
-      - name: Run trends fetcher
-        env:
-          BATCH_SIZE: ${{ github.event.inputs.batch_size || '75' }}
-        run: |
-          python scripts/fetch_trends.py > script_output.log 2>&1
-      
-      - name: Commit and push results
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add data/
-          git add processed_terms.txt
-          git add logs/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Fetch trends data $(date +'%Y-%m-%d %H:%M UTC')"
-          git push
-        continue-on-error: true
-
-      - name: Capture last 10 log lines
-        run: |
-          tail -n 10 script_output.log > summary.log
-          echo "SUMMARY<<EOF" >> $GITHUB_ENV
-          cat summary.log >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
-      
-      - name: Upload logs as artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: trends-logs-${{ github.run_number }}
-          path: logs/*.log
-          retention-days: 30
-
-      - name: Send summary email
-        if: always()   
-        uses: dawidd6/action-send-mail@v4
-        with:
-          server_address: smtp.gmail.com
-          server_port: 587
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "GitHub Action Run Summary — ${{ github.repository }}"
-          to: ${{ secrets.MAIL_TO }}
-          from: GitHub Action <${{ secrets.MAIL_USERNAME }}>
-          body: |
-            ✅ Workflow: ${{ github.workflow }}
-            🕒 Run time: ${{ github.run_started_at }}
-            📁 Repo: ${{ github.repository }}
-            🧩 Branch: ${{ github.ref_name }}
-            💬 Last 10 log lines:
-            ${{ env.SUMMARY }}
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run trends fetcher
+      env:
+        BATCH_SIZE: ${{ github.event.inputs.batch_size || '75' }}
+      run: |
+        python scripts/fetch_trends.py
+      timeout-minutes: 30
+    
+    - name: Commit and push results
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/
+        git add processed_terms.txt
+        git add logs/
+        git diff --quiet && git diff --staged --quiet || git commit -m "Auto: Fetch trends data $(date +'%Y-%m-%d %H:%M UTC')"
+        git push
+      continue-on-error: true
+    
+    - name: Upload logs as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: trends-logs-${{ github.run_number }}
+        path: logs/*.log
+        retention-days: 30

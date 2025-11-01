@@ -73,3 +73,5 @@ Unemployment Rate
 Utility Bills
 Vegetable Prices
 Washing Machine Price
+Decoration Material Price
+Minimum Income Guaranteed

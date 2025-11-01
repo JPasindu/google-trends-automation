@@ -16,6 +16,7 @@ TERMS_QUEUE_FILE = 'data/terms_queue.txt'
 PROCESSED_FILE = 'processed_terms.txt'
 DATA_DIR = Path('data/trends_results')
 LOG_DIR = Path('logs')
+MASTER_FILE = DATA_DIR / 'google_trends_master.csv'
 
 # Setup directories
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -32,6 +33,110 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+
+def load_or_create_master_df():
+    """Load existing master file or create new one."""
+    if MASTER_FILE.exists():
+        df = pd.read_csv(MASTER_FILE, parse_dates=['date'])
+        logger.info(f"Loaded master file with {len(df)} rows and {len(df.columns)-1} terms")
+        return df
+    else:
+        # Create empty dataframe with date column
+        empty_df = pd.DataFrame(columns=['date'])
+        return empty_df
+
+
+def save_master_df(df):
+    """Save master dataframe to CSV."""
+    df.to_csv(MASTER_FILE, index=False)
+    logger.info(f"Saved master file with {len(df)} rows and {len(df.columns)-1} terms")
+
+
+def fetch_trend_data(pytrends, term, retries=0):
+    """Fetch Google Trends data for a single term."""
+    try:
+        # Build payload - Data from 2012, Sri Lanka
+        pytrends.build_payload(
+            [term],
+            cat=0,
+            timeframe='2012-01-01 2024-10-31',
+            geo='LK',
+            gprop=''
+        )
+        
+        # Get interest over time
+        interest_df = pytrends.interest_over_time()
+        
+        if interest_df.empty:
+            logger.warning(f"No data returned for term: {term}")
+            return None
+        
+        # Remove the 'isPartial' column if it exists
+        if 'isPartial' in interest_df.columns:
+            interest_df = interest_df.drop(columns=['isPartial'])
+        
+        # Reset index to make date a column
+        interest_df = interest_df.reset_index()
+        
+        # Rename the term column to just the term name
+        interest_df = interest_df.rename(columns={term: term})
+        
+        # Keep only date and the term column
+        interest_df = interest_df[['date', term]]
+        
+        logger.info(f"✓ Successfully fetched data for: {term}")
+        return interest_df
+    
+    except Exception as e:
+        error_msg = str(e)
+        
+        # Check for rate limit error
+        if '429' in error_msg or 'Too Many Requests' in error_msg:
+            logger.warning(f"⚠️ Rate limit hit (429) on term: {term} - will continue on next run")
+            raise Exception("RATE_LIMIT")
+        
+        # Check for timeout errors
+        if 'ReadTimeout' in error_msg or 'ConnectTimeout' in error_msg or 'timeout' in error_msg.lower():
+            logger.warning(f"⏱️  Timeout on {term}, retry {retries+1}/{MAX_RETRIES}")
+            if retries < MAX_RETRIES:
+                time.sleep(random.uniform(10, 15))
+                return fetch_trend_data(pytrends, term, retries + 1)
+            else:
+                logger.error(f"✗ Failed {term} after {MAX_RETRIES} timeout retries")
+                return None
+        
+        # Retry on other errors
+        if retries < MAX_RETRIES:
+            logger.warning(f"Error fetching {term}, retry {retries+1}/{MAX_RETRIES}: {error_msg}")
+            time.sleep(random.uniform(5, 10))
+            return fetch_trend_data(pytrends, term, retries + 1)
+        
+        logger.error(f"✗ Failed to fetch {term} after {MAX_RETRIES} retries: {error_msg}")
+        return None
+
+
+def update_master_with_new_terms(master_df, new_data_list):
+    """Merge new terms data into master dataframe."""
+    if not new_data_list:
+        return master_df
+    
+    # Start with master or create from first term
+    if master_df.empty:
+        result_df = new_data_list[0].copy()
+        start_idx = 1
+    else:
+        result_df = master_df.copy()
+        start_idx = 0
+    
+    # Merge each new term one by one on 'date'
+    for df in new_data_list[start_idx:]:
+        result_df = pd.merge(result_df, df, on='date', how='outer')
+    
+    # Sort by date and fill missing values with 0
+    result_df = result_df.sort_values('date').fillna(0).reset_index(drop=True)
+    
+    return result_df
 
 
 def load_terms_queue():
@@ -73,69 +178,14 @@ def update_queue(remaining_terms):
     logger.info(f"Updated queue with {len(remaining_terms)} remaining terms")
 
 
-def fetch_trend_data(pytrends, term, retries=0):
-    """Fetch Google Trends data for a single term."""
-    try:
-        # Build payload - Data from 2012, Sri Lanka
-        pytrends.build_payload(
-            [term],
-            cat=0,
-            timeframe='2012-01-01 2025-10-31',  # From 2012 to today
-            geo='LK',  # Sri Lanka
-            gprop=''
-        )
-        
-        # Get interest over time
-        interest_df = pytrends.interest_over_time()
-        
-        if interest_df.empty:
-            logger.warning(f"No data returned for term: {term}")
-            return None
-        
-        # Remove the 'isPartial' column if it exists
-        if 'isPartial' in interest_df.columns:
-            interest_df = interest_df.drop(columns=['isPartial'])
-        
-        # Add metadata
-        interest_df['term'] = term
-        interest_df['fetch_date'] = datetime.now().strftime('%Y-%m-%d')
-        
-        logger.info(f"✓ Successfully fetched data for: {term}")
-        return interest_df
-    
-    except Exception as e:
-        error_msg = str(e)
-        
-        # Check for rate limit error
-        if '429' in error_msg or 'Too Many Requests' in error_msg:
-            logger.warning(f"⚠️ Rate limit hit (429) on term: {term} - will continue on next run")
-            raise Exception("RATE_LIMIT")
-        
-        # Check for timeout errors
-        if 'ReadTimeout' in error_msg or 'ConnectTimeout' in error_msg or 'timeout' in error_msg.lower():
-            logger.warning(f"⏱️  Timeout on {term}, retry {retries+1}/{MAX_RETRIES}")
-            if retries < MAX_RETRIES:
-                time.sleep(random.uniform(10, 15))  # Longer wait for timeouts
-                return fetch_trend_data(pytrends, term, retries + 1)
-            else:
-                logger.error(f"✗ Failed {term} after {MAX_RETRIES} timeout retries")
-                return None
-        
-        # Retry on other errors
-        if retries < MAX_RETRIES:
-            logger.warning(f"Error fetching {term}, retry {retries+1}/{MAX_RETRIES}: {error_msg}")
-            time.sleep(random.uniform(5, 10))
-            return fetch_trend_data(pytrends, term, retries + 1)
-        
-        logger.error(f"✗ Failed to fetch {term} after {MAX_RETRIES} retries: {error_msg}")
-        return None
-
-
 def main():
     logger.info("=" * 60)
-    logger.info("Starting Google Trends fetch job")
+    logger.info("Starting Google Trends fetch job - MASTER FILE MODE")
     logger.info(f"Batch size: {BATCH_SIZE}")
     logger.info("=" * 60)
+    
+    # Load master dataframe
+    master_df = load_or_create_master_df()
     
     # Load terms
     all_terms = load_terms_queue()
@@ -148,15 +198,23 @@ def main():
         logger.info("✅ No pending terms to process. Queue is empty or all terms processed.")
         return
     
-    # Select batch
-    batch = pending_terms[:BATCH_SIZE]
-    logger.info(f"Processing batch of {len(batch)} terms")
+    # Check which pending terms are already in master (in case of partial processing)
+    existing_columns = set(master_df.columns) if not master_df.empty else set()
+    truly_new_terms = [t for t in pending_terms if t not in existing_columns]
+    
+    if not truly_new_terms:
+        logger.info("✅ All pending terms already exist in master file.")
+        return
+    
+    # Select batch from truly new terms
+    batch = truly_new_terms[:BATCH_SIZE]
+    logger.info(f"Processing batch of {len(batch)} new terms")
     
     # Initialize pytrends with longer timeout
     pytrends = TrendReq(hl='en-US', tz=360, timeout=(30, 60), retries=3, backoff_factor=1.0)
     
     # Process terms
-    all_results = []
+    new_data_list = []
     successful_terms = []
     failed_terms = []
     rate_limit_hit = False
@@ -169,14 +227,14 @@ def main():
             df = fetch_trend_data(pytrends, term)
             
             if df is not None:
-                all_results.append(df)
+                new_data_list.append(df)
                 successful_terms.append(term)
                 save_processed_term(term)
             else:
                 failed_terms.append(term)
             
             # Random delay between requests
-            if idx < len(batch):  # Don't delay after last term
+            if idx < len(batch):
                 delay = random.uniform(DELAY_MIN, DELAY_MAX)
                 logger.info(f"Waiting {delay:.1f}s before next request...")
                 time.sleep(delay)
@@ -190,15 +248,25 @@ def main():
                 logger.error(f"Unexpected error processing {term}: {e}")
                 failed_terms.append(term)
     
-    # Save results
-    if all_results:
-        combined_df = pd.concat(all_results, ignore_index=True)
+    # Update master dataframe
+    if new_data_list:
+        updated_master = update_master_with_new_terms(master_df, new_data_list)
+        save_master_df(updated_master)
+        logger.info(f"💾 Updated master file with {len(new_data_list)} new terms")
+        
+        # Also save a backup with timestamp
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        output_file = DATA_DIR / f'trends_{timestamp}.csv'
-        combined_df.to_csv(output_file, index=True)
-        logger.info(f"💾 Saved {len(all_results)} term results to {output_file}")
+        backup_file = DATA_DIR / f'trends_backup_{timestamp}.csv'
+        updated_master.to_csv(backup_file, index=False)
+        logger.info(f"💾 Created backup: {backup_file}")
+        
+        total_terms = len(updated_master.columns) - 1
+    else:
+        updated_master = master_df
+        total_terms = len(master_df.columns) - 1 if not master_df.empty else 0
+        logger.info("No new data to add to master file")
     
-    # Update queue (remove successfully processed terms)
+    # Update queue
     remaining_terms = [t for t in pending_terms if t not in successful_terms]
     update_queue(remaining_terms)
     
@@ -207,11 +275,14 @@ def main():
     logger.info("Job Summary")
     logger.info(f"✓ Successful: {len(successful_terms)}")
     logger.info(f"✗ Failed: {len(failed_terms)}")
+    logger.info(f"📊 Total terms in master: {total_terms}")
     logger.info(f"📊 Remaining in queue: {len(remaining_terms)}")
     if rate_limit_hit:
-        logger.info("⚠️  Rate limit hit - will resume on next scheduled run")
+        logger.warning("⚠️  Rate limit hit - will resume on next scheduled run (4 hours)")
     logger.info("=" * 60)
     
+    # Exit successfully even if rate limit hit (no exit code 1)
+    # The workflow will continue and send email summary
 
 
 if __name__ == '__main__':

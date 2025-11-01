@@ -60,7 +60,7 @@ def fetch_trend_data(pytrends, term, retries=0):
         pytrends.build_payload(
             [term],
             cat=0,
-            timeframe='2012-01-01 2024-10-31',
+            timeframe='2012-01-01 2025-10-31',
             geo='LK',
             gprop=''
         )

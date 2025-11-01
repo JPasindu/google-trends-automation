@@ -70,3 +70,5 @@ Utility Bills
 Vegetable Prices
 Washing Machine Price
 Family Economic Status
+Housing Prices
+International Settlement

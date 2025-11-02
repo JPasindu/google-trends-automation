@@ -122,3 +122,4 @@ Remittances
 Youth unemployment
 Minimum Income Guaranteed
 Unemployment Allowance
+Decoration Material Price

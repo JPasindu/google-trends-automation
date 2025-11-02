@@ -3,3 +3,7 @@ Credit card debt
 Commodity inflation
 Vegetable shortage
 Unemployment benefits
+Chicken price
+Egg price
+Fish price
+Vegetable price

@@ -130,3 +130,4 @@ Chicken price
 Egg price
 Fish price
 Vegetable price
+Unemployment benefits

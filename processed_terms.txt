@@ -342,3 +342,52 @@ Disability benefits application
 Workers' compensation claims
 Annuity income streams
 Rental income management
+GNP per capita
+Natural rate of unemployment
+Pink-collar jobs
+Education sector jobs
+Retail hiring
+Tips income
+Hazard pay eligibility
+Severance pay calculation
+Termination pay benefits
+Unemployment insurance claims
+Social security benefits eligibility
+Pension income options
+Dividend income stocks
+Capital gains tax
+Business income reporting
+Partnership income distribution
+Farm income trends
+Alimony payments
+Welfare benefits eligibility
+Housing assistance programs
+Educational grants search
+Scholarships for students
+Stipends for interns
+Prize money
+Gift income tax
+Inheritance planning
+Saving plans
+Investment options
+salary
+wage
+pay
+earnings
+compensation
+remuneration
+stipend
+bonus
+commission
+tips
+overtime
+raise
+increase
+hike
+cut
+reduction
+deduction
+net
+gross
+disposable
+taxable

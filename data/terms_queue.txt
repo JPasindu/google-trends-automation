@@ -1,1 +1,502 @@
 Vegetable shortage
+recession
+boom
+slowdown
+stability
+uncertainty
+outlook
+forecast
+collapse
+recovery
+growth
+stagnation
+depression
+bubble
+crisis
+sentiment
+confidence
+volatility
+risk
+resilience
+shock
+downturn
+upturn
+upswing
+downswing
+prospects
+indicators
+data
+health
+strength
+weakness
+climate
+environment
+trajectory
+momentum
+direction
+trend
+analysis
+update
+news
+report
+summary
+overview
+snapshot
+pulse
+barometer
+index
+measure
+performance
+GDP
+GNP
+GDP growth rate
+GNP per capita
+National income
+Fiscal policy
+Monetary policy stance
+Quantitative tightening
+Fiscal stimulus
+Austerity measures
+Structural reform
+Economic liberalization
+Privatization
+Nationalization
+Market economy
+Command economy
+Mixed economy
+Economic development
+Developing economy
+Developed economy
+Emerging market
+Frontier market
+Debt crisis
+Currency crisis
+Banking crisis
+Sovereign default
+Credit crunch
+Liquidity trap
+Stagflation
+Hyperinflation
+Disinflation
+Core inflation
+Headline inflation
+Inflation expectations
+Deflationary spiral
+Output gap
+Potential output
+Natural rate of unemployment
+Phillips curve
+Keynesian economics
+Supply-side economics
+Demand-side economics
+Economic inequality
+Wealth distribution
+Middle class
+Poverty line
+Extreme poverty
+Social mobility
+Economic justice
+Inclusive growth
+Internship opportunities
+Apprenticeship programs
+Volunteer positions
+Casual employment
+Temp agencies
+On-call work
+Zero-hour contracts
+Consulting jobs
+Entrepreneurship opportunities
+Start-up vacancies
+Green jobs market
+Blue-collar employment
+White-collar positions
+Pink-collar jobs
+Knowledge work demand
+Creative industries jobs
+Tech industry hiring
+Healthcare employment
+Education sector jobs
+Manufacturing employment
+Service sector jobs
+Agricultural labor
+Mining jobs availability
+Construction work
+Transportation jobs
+Retail hiring
+Hospitality industry jobs
+Resume writing tips
+CV templates
+Cover letter advice
+Job application process
+Interview preparation
+Assessment center tips
+Job fair events
+Career counseling services
+Job coaching resources
+Professional networking
+Employee referral programs
+Headhunter services
+Recruiter contacts
+Staffing agencies list
+Job board reviews
+Online job search
+LinkedIn job search
+Indeed.com usage
+Glassdoor reviews
+Salary negotiation techniques
+Job offer evaluation
+Counter offer strategies
+Background check process
+hiring
+vacancies
+openings
+opportunities
+listings
+market
+placement
+recruitment
+staffing
+agency
+careers
+employment
+gig
+freelance 
+temporary 
+permanent 
+full-time
+part-time
+remote jobs
+onsite
+flexible
+contract
+project-based
+entry-level
+senior
+executive
+skilled
+unskilled
+labor
+talent
+shortage
+gap
+demand
+supply
+applicant
+candidate
+interview
+offer
+acceptance
+rate
+turnover
+retention
+resignation
+quitting
+layoff
+firing
+downsizing
+rightsizing
+freeze
+ban
+moratorium
+bust
+surge
+decline
+statistics
+numbers
+platform
+portal
+website
+board
+engine
+network
+fair
+event
+drive
+Wages and salaries
+Bonus payments
+Commission structures
+Tips income
+Overtime earnings
+Hazard pay eligibility
+Shift differential pay
+On-call compensation
+Call-back pay rules
+Standby pay rates
+Severance pay calculation
+Termination pay benefits
+Redundancy pay guidelines
+Unemployment insurance claims
+Disability benefits application
+Workers' compensation claims
+Social security benefits eligibility
+Pension income options
+Annuity income streams
+Rental income management
+Royalty income sources
+Dividend income stocks
+Interest income accounts
+Capital gains tax
+Business income reporting
+Partnership income distribution
+Corporation income dividends
+Farm income trends
+Alimony payments
+Child support enforcement
+Government transfer programs
+Welfare benefits eligibility
+Food stamps application
+Housing assistance programs
+Energy assistance grants
+Educational grants search
+Scholarships for students
+Fellowships for researchers
+Stipends for interns
+Grants for small businesses
+Prize money
+Award funds
+Gift income tax
+Inheritance planning
+Trust fund management
+Investment income strategies
+Budgeting methods
+Saving plans
+Investment options
+Financial advice
+salary
+wage
+pay
+earnings
+compensation
+remuneration
+stipend
+bonus
+commission
+tips
+overtime
+raise
+increase
+hike
+cut
+reduction
+deduction
+net
+gross
+disposable
+taxable
+untaxed
+passive
+active
+residual
+secondary
+multiple
+stream
+source
+main
+primary
+supplemental
+extra
+side
+hustle
+odd jobs
+moonlighting
+self-employment
+business
+venture
+dividends
+interest
+royalties
+rental
+annuity
+pension
+social security
+alimony
+child support
+benefits
+allowance
+voucher
+refund
+rebate
+windfall
+inheritance
+gift
+loan
+advance
+payment
+remittance
+transfer
+inflow
+cash
+flow
+budget
+management
+planning
+security
+stress
+adequacy
+sufficiency
+shortfall
+target
+goal
+expectation
+survey
+bracket
+group 
+level
+threshold
+Housing costs breakdown
+Utilities expenditure
+Food budget
+Transportation costs
+Healthcare expenses
+Education spending
+Entertainment budget
+Personal care costs
+Apparel shopping
+Services fees
+Taxes payment
+Insurance premiums
+Savings contributions
+Investment allocations
+Debt repayment plans
+Charitable donations
+Gift expenses
+Mortgage payment schedule
+Rent affordability
+Home insurance costs
+Property tax bills
+Home maintenance expenses
+Home repair costs
+Home improvement projects
+Furniture purchases
+Appliances replacement
+Electronics upgrades
+Car payment plans
+Car insurance rates
+Gasoline expenditure
+Vehicle maintenance costs
+Public transit fares
+Taxi services
+Ride-sharing costs
+Airfare deals
+Hotel bookings
+Dining out frequency
+Groceries shopping list
+Takeout orders
+Delivery services fees
+Clothing budget
+Shoes purchases
+Accessories spending
+Health insurance plans
+Medical bills payment
+Dental care costs
+Vision care expenses
+Prescriptions drugs cost
+Over-the-counter medicines
+Gym membership fees
+expenses
+expenditure
+outgoings
+outlay
+cost
+disbursement
+bill
+fee
+charge
+tariff
+levy
+toll
+dues
+subscription
+membership
+rent
+mortgage
+utilities
+grocery
+food
+fuel
+petrol
+diesel
+transportation
+commute
+travel
+holiday
+vacation
+leisure
+entertainment
+dining
+restaurant
+takeaway
+delivery
+clothing
+apparel
+footwear
+gadgets
+electronics
+furniture
+appliance
+home
+maintenance
+repair
+renovation
+improvement
+car
+auto
+insurance
+medical
+dental
+optical
+prescription
+OTC
+education
+tuition
+books
+supplies
+course
+training
+childcare
+kid
+baby
+pet
+care
+grooming
+personal
+wellness
+fitness
+gym
+hobby
+donation
+charity
+repayment
+debt
+credit
+card
+EM
+tax
+saving
+investment
+discretionary
+essential
+non-essential
+fixed
+variable
+optional
+mandatory
+cutback
+control
+tracking
+plan
+crunch
+squeeze
+burden
+affordability
+value
+bargain
+discount
+deal
+price
+comparison
+shopping
+habit
+pattern
+diary
+log

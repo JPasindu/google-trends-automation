@@ -1,78 +1,11 @@
-Vegetable shortage
-recession
-boom
-slowdown
-stability
-uncertainty
-outlook
-forecast
-collapse
-recovery
-growth
-stagnation
-depression
-bubble
-crisis
-sentiment
-confidence
-volatility
-risk
-resilience
-shock
-downturn
 upturn
 upswing
-downswing
-prospects
-indicators
-data
-health
-strength
-weakness
-climate
-environment
-trajectory
-momentum
-direction
-trend
-analysis
-update
-news
-report
-summary
-overview
-snapshot
-pulse
-barometer
-index
-measure
-performance
-GDP
-GNP
-GDP growth rate
 GNP per capita
-National income
-Fiscal policy
 Monetary policy stance
 Quantitative tightening
-Fiscal stimulus
-Austerity measures
-Structural reform
 Economic liberalization
-Privatization
 Nationalization
-Market economy
-Command economy
-Mixed economy
-Economic development
-Developing economy
-Developed economy
-Emerging market
 Frontier market
-Debt crisis
-Currency crisis
-Banking crisis
-Sovereign default
 Credit crunch
 Liquidity trap
 Stagflation
@@ -160,9 +93,9 @@ agency
 careers
 employment
 gig
-freelance 
-temporary 
-permanent 
+freelance
+temporary
+permanent
 full-time
 part-time
 remote jobs
@@ -340,7 +273,7 @@ goal
 expectation
 survey
 bracket
-group 
+group
 level
 threshold
 Housing costs breakdown

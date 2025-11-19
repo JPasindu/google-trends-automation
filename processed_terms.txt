@@ -131,3 +131,70 @@ Egg price
 Fish price
 Vegetable price
 Unemployment benefits
+Vegetable shortage
+recession
+boom
+slowdown
+stability
+uncertainty
+outlook
+forecast
+collapse
+recovery
+growth
+stagnation
+depression
+bubble
+crisis
+sentiment
+confidence
+volatility
+risk
+resilience
+shock
+downturn
+downswing
+prospects
+indicators
+data
+health
+strength
+weakness
+climate
+environment
+trajectory
+momentum
+direction
+trend
+analysis
+update
+news
+report
+summary
+overview
+snapshot
+pulse
+barometer
+index
+measure
+performance
+GDP
+GNP
+GDP growth rate
+National income
+Fiscal policy
+Fiscal stimulus
+Austerity measures
+Structural reform
+Privatization
+Market economy
+Command economy
+Mixed economy
+Economic development
+Developing economy
+Developed economy
+Emerging market
+Debt crisis
+Currency crisis
+Banking crisis
+Sovereign default

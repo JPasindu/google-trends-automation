@@ -624,3 +624,6 @@ habit
 pattern
 diary
 log
+Royalty income sources
+Investment income strategies
+Delivery services fees

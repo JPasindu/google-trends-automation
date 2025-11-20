@@ -498,3 +498,64 @@ Vision care expenses
 Prescriptions drugs cost
 expenses
 expenditure
+Knowledge work demand
+Job offer evaluation
+Interest income accounts
+shortfall
+Housing costs breakdown
+Utilities expenditure
+Entertainment budget
+Gift expenses
+Rent affordability
+Electronics upgrades
+Public transit fares
+Airfare deals
+Groceries shopping list
+Takeout orders
+Medical bills payment
+Over-the-counter medicines
+Gym membership fees
+outlay
+cost
+disbursement
+bill
+fee
+charge
+tariff
+levy
+toll
+dues
+subscription
+membership
+rent
+mortgage
+utilities
+grocery
+food
+fuel
+petrol
+diesel
+transportation
+commute
+travel
+holiday
+vacation
+leisure
+entertainment
+dining
+restaurant
+takeaway
+delivery
+clothing
+apparel
+footwear
+gadgets
+electronics
+furniture
+appliance
+home
+maintenance
+repair
+renovation
+improvement
+car

@@ -1,78 +1,17 @@
-Knowledge work demand
-Job offer evaluation
 Overtime earnings
 Royalty income sources
-Interest income accounts
 Government transfer programs
 Investment income strategies
 Financial advice
-shortfall
-Housing costs breakdown
-Utilities expenditure
-Entertainment budget
 Insurance premiums
 Savings contributions
 Investment allocations
 Charitable donations
-Gift expenses
-Rent affordability
 Property tax bills
 Furniture purchases
-Electronics upgrades
-Public transit fares
 Ride-sharing costs
-Airfare deals
-Groceries shopping list
-Takeout orders
 Delivery services fees
-Medical bills payment
-Over-the-counter medicines
-Gym membership fees
 outgoings
-outlay
-cost
-disbursement
-bill
-fee
-charge
-tariff
-levy
-toll
-dues
-subscription
-membership
-rent
-mortgage
-utilities
-grocery
-food
-fuel
-petrol
-diesel
-transportation
-commute
-travel
-holiday
-vacation
-leisure
-entertainment
-dining
-restaurant
-takeaway
-delivery
-clothing
-apparel
-footwear
-gadgets
-electronics
-furniture
-appliance
-home
-maintenance
-repair
-renovation
-improvement
-car
 auto
 insurance
 medical

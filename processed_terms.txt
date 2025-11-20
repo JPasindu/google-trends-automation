@@ -559,3 +559,68 @@ repair
 renovation
 improvement
 car
+Government transfer programs
+Financial advice
+Insurance premiums
+Savings contributions
+Property tax bills
+Ride-sharing costs
+outgoings
+auto
+insurance
+medical
+dental
+optical
+prescription
+OTC
+education
+tuition
+books
+supplies
+course
+training
+childcare
+kid
+baby
+pet
+care
+grooming
+personal
+wellness
+fitness
+gym
+hobby
+donation
+charity
+repayment
+debt
+credit
+card
+EM
+tax
+saving
+investment
+discretionary
+essential
+non-essential
+fixed
+variable
+optional
+mandatory
+control
+tracking
+plan
+crunch
+squeeze
+burden
+value
+bargain
+discount
+deal
+price
+comparison
+shopping
+habit
+pattern
+diary
+log

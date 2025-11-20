@@ -1,74 +1,9 @@
 Overtime earnings
 Royalty income sources
-Government transfer programs
 Investment income strategies
-Financial advice
-Insurance premiums
-Savings contributions
 Investment allocations
 Charitable donations
-Property tax bills
 Furniture purchases
-Ride-sharing costs
 Delivery services fees
-outgoings
-auto
-insurance
-medical
-dental
-optical
-prescription
-OTC
-education
-tuition
-books
-supplies
-course
-training
-childcare
-kid
-baby
-pet
-care
-grooming
-personal
-wellness
-fitness
-gym
-hobby
-donation
-charity
-repayment
-debt
-credit
-card
-EM
-tax
-saving
-investment
-discretionary
-essential
-non-essential
-fixed
-variable
-optional
-mandatory
 cutback
-control
-tracking
-plan
-crunch
-squeeze
-burden
 affordability
-value
-bargain
-discount
-deal
-price
-comparison
-shopping
-habit
-pattern
-diary
-log

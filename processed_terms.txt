@@ -627,3 +627,6 @@ log
 Royalty income sources
 Investment income strategies
 Delivery services fees
+Furniture purchases
+cutback
+affordability

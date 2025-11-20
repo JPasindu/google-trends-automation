@@ -453,3 +453,48 @@ planning
 security
 stress
 adequacy
+Blue-collar employment
+Shift differential pay
+Fellowships for researchers
+Trust fund management
+moonlighting
+sufficiency
+target
+goal
+expectation
+survey
+bracket
+group
+level
+threshold
+Food budget
+Transportation costs
+Healthcare expenses
+Education spending
+Personal care costs
+Apparel shopping
+Services fees
+Taxes payment
+Debt repayment plans
+Mortgage payment schedule
+Home insurance costs
+Home maintenance expenses
+Home repair costs
+Home improvement projects
+Appliances replacement
+Car payment plans
+Car insurance rates
+Gasoline expenditure
+Vehicle maintenance costs
+Taxi services
+Hotel bookings
+Dining out frequency
+Clothing budget
+Shoes purchases
+Accessories spending
+Health insurance plans
+Dental care costs
+Vision care expenses
+Prescriptions drugs cost
+expenses
+expenditure

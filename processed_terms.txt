@@ -633,3 +633,75 @@ affordability
 Overtime earnings
 Charitable donations
 Investment allocations
+air quality
+amenity
+annex for rent
+apartment rent
+arrears
+bank interest
+bike price
+budget speech
+bus ticket price
+buy phone
+cabinet reshuffle
+capital markets
+career development
+career opportunities
+central bank policy
+commercial housing
+company closing
+consumer price index
+cosmetics
+cost management
+cost of living
+credit card payment
+credit rating
+crime rate
+curfew update
+cv format
+debt relief
+debt restructuring
+deposit rates
+dhal price
+discount offers
+dollar rate
+economic crisis
+economic growth
+economic indicators
+economic policies
+economic situation
+education price
+education quality
+election result
+electricity bill
+electricity price
+electricity unit rate
+employee benefits
+employment opportunities
+employment rate
+epf withdrawal
+exchange rate
+export price
+external debt
+financial investment
+financial markets
+financial services
+financing
+fiscal policy
+fixed deposit rate
+food prices
+food security
+foreign employment
+foreign reserves
+forex rate
+freelancing
+fuel crisis
+fuel price
+fuel queue
+furniture price
+gdp
+global economy
+gold price
+government debt
+government jobs
+government relief

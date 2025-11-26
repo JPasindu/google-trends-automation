@@ -1,0 +1,194 @@
+air quality
+amenity
+annex for rent
+apartment rent
+arrears
+bank interest
+bike price
+bribery news
+budget speech
+bus ticket price
+buy phone
+cabinet reshuffle
+capital markets
+career development
+career opportunities
+central bank policy
+commercial housing
+company closing
+consumer price index
+cosmetics
+cost management
+cost of living
+credit card payment
+credit rating
+crime rate
+curfew update
+cv format
+debt relief
+debt restructuring
+decoration material price
+deposit rates
+dhal price
+discount offers
+dollar rate
+economic crisis
+economic growth
+economic indicators
+economic policies
+economic situation
+education price
+education quality
+election result
+electricity bill
+electricity price
+electricity unit rate
+employee benefits
+employment opportunities
+employment rate
+epf withdrawal
+exchange rate
+export price
+external debt
+financial investment
+financial markets
+financial services
+financing
+fiscal policy
+fixed deposit rate
+food prices
+food security
+foreign employment
+foreign reserves
+forex rate
+freelancing
+fuel crisis
+fuel price
+fuel queue
+full-time job
+furniture price
+gdp
+global economy
+gold price
+government debt
+government jobs
+government relief
+government spending
+graduate jobs
+graphic design course
+grocery price
+gulf jobs
+health insurance
+health services
+holiday packages
+hospital cost
+hotel booking
+house for rent
+house price
+housing
+housing loan
+housing prices
+ielts class
+imf bailout
+imp
+import and export
+import price
+inflation
+inflation rate
+interest rates
+international settlement
+international trade
+it courses
+job
+job agency
+job interview
+job interview tips
+job loss
+job satisfaction
+job security
+job vacancies
+job vacancy
+jobs abroad
+labour economics
+land for sale
+leisure activities
+life expectancy
+loan interest
+local tourism
+macroeconomic control
+market prices
+meat price
+medical care
+microfinance crisis
+migration process
+milk powder price
+minimum wage
+monetary policy
+money supply
+national economy
+national savings
+nvq course
+oil prices
+online courses
+online shopping
+parliament update
+part-time job
+per capita income
+population
+poverty line
+power cut schedule
+president news
+price comparison
+price control
+price hike
+private jobs
+private school
+protest news
+public security
+public transportation
+public trust
+purchasing power
+quality of life
+recruitment agencies
+refrigerator price
+refrigerator prices
+relief package
+remote work
+rent in colombo
+retail price
+retirement
+rice price
+rupee depreciation
+rural development
+saudi jobs
+school fees
+school reopening date
+skilled migration
+smart tv prices
+sri lanka bankruptcy
+standard of living
+stock market
+stocks
+supply chain
+sustainability
+tax revenue
+tourist attractions
+train schedule
+train ticket price
+tuition classes
+unemployment
+unemployment rate
+urban development
+us dollar
+utility bills
+vegetable prices
+visa process
+vocational training
+washing machine price
+water bill
+welfare
+wheat flour price
+wholesale price
+workforce
+work-life balance
+workplace safety

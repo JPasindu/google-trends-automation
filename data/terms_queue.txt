@@ -1,0 +1,10 @@
+array(['Age', 'Air Conditioner Price', 'Cosmetics', 'Employment Rate',
+       'Inflation', 'Bank loan rate', 'Forex rate', 'confidence',
+       'health', 'weakness', 'trajectory', 'news', 'Economic development',
+       'market', 'onsite', 'applicant', 'drive', 'wage', 'active',
+       'rental', 'annuity', 'rebate', 'goal', 'restaurant', 'takeaway',
+       'training', 'childcare', 'care', 'career opportunities',
+       'cost of living', 'economic policies', 'freelancing',
+       'government jobs', 'inflation', 'loan interest', 'market prices',
+       'national economy', 'power cut schedule', 'train schedule',
+       'train ticket price'], dtype=object)

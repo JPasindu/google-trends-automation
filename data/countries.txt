@@ -1,0 +1,28 @@
+DK|Denmark
+AU|Australia
+CL|Chile
+CO|Colombia
+EE|Estonia
+FI|Finland
+FR|France
+DE|Germany
+KR|Korea
+LT|Lithuania
+NL|Netherlands
+SK|Slovak Rep.
+HU|Hungary
+LV|Latvia
+PL|Poland
+PT|Portugal
+IL|Israel
+IT|Italy
+CR|Costa Rica
+BE|Belgium
+CZ|Czechia
+GR|Greece
+NZ|New Zealand
+MX|Mexico
+LU|Luxembourg
+AT|Austria
+JP|Japan
+IE|Ireland

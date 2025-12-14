@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-*.log
-.DS_Store
-.env
-*.swp
-Data_handling
-.Rproj.user

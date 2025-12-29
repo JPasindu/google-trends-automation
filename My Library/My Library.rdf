@@ -1,0 +1,2749 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dcterms="http://purl.org/dc/terms/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#">
+    <bib:Article rdf:about="https://www.mdpi.com/2079-3197/9/9/94">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2079-3197"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arora</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chaganty</foaf:surname>
+                        <foaf:givenName>N. Rao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_2"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>poisson regression</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero- and k-inflated data</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-inflated data</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>EM Estimation for Zero- and k-Inflated Poisson Regression Model</dc:title>
+        <dcterms:abstract>Count data with excessive zeros are ubiquitous in healthcare, medical, and scientific studies. There are numerous articles that show how to fit Poisson and other models which account for the excessive zeros. However, in many situations, besides zero, the frequency of another count k tends to be higher in the data. The zero- and k-inflated Poisson distribution model (ZkIP) is appropriate in such situations The ZkIP distribution essentially is a mixture distribution of Poisson and degenerate distributions at points zero and k. In this article, we study the fundamental properties of this mixture distribution. Using stochastic representation, we provide details for obtaining parameter estimates of the ZkIP regression model using the Expectation–Maximization (EM) algorithm for a given data. We derive the standard errors of the EM estimates by computing the complete, missing, and observed data information matrices. We present the analysis of two real-life data using the methods outlined in the paper.</dcterms:abstract>
+        <dc:date>2021/9</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.mdpi.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/2079-3197/9/9/94</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:00:37</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:description>Publisher: Multidisciplinary Digital Publishing Institute</dc:description>
+        <bib:pages>94</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2079-3197">
+        <prism:volume>9</prism:volume>
+        <dc:title>Computation</dc:title>
+        <dc:identifier>DOI 10.3390/computation9090094</dc:identifier>
+        <prism:number>9</prism:number>
+        <dc:identifier>ISSN 2079-3197</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_2">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/2/Arora and Chaganty - 2021 - EM Estimation for Zero- and k-Inflated Poisson Regression Model.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.mdpi.com/2079-3197/9/9/94/pdf?version=1630057857</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:00:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/03610918.2024.2331624">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0361-0918"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abusaif</foaf:surname>
+                        <foaf:givenName>Ihab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kayaci</foaf:surname>
+                        <foaf:givenName>Burak Serdar</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kuş</foaf:surname>
+                        <foaf:givenName>Coşkun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fisher scoring algorithm</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Inflated count regression model</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Zero-inflated Poisson distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Multiple arbitrarily inflated Poisson regression analysis</dc:title>
+        <dcterms:abstract>In this paper, a new flexible count regression analysis is proposed. For this purpose, a new modification of the Poisson distribution is introduced which generalizes the Poisson, zero-inflated Poisson, zero-one inflated Poisson, and zero-one-two inflated Poisson distributions. Some distributional properties are discussed for the proposed distribution. The Fisher scoring and EM algorithms are derived to attain the maximum likelihood estimates of the unknown parameters. An expected Fisher information matrix is provided to construct an approximate confidence interval for the parameters. Using the modified Poisson distribution, an arbitrary multiply inflated counting regression model is proposed. The performance of the maximum likelihood methodology is investigated with a simulation study for the distribution and count regression model. Finally, two practical data sets are analyzed and the superiority of the proposed model is demonstrated among others.</dcterms:abstract>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/03610918.2024.2331624</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:08:51</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/03610918.2024.2331624</dc:description>
+        <bib:pages>1-17</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0361-0918">
+        <prism:volume>0</prism:volume>
+        <dc:title>Communications in Statistics - Simulation and Computation</dc:title>
+        <dc:identifier>DOI 10.1080/03610918.2024.2331624</dc:identifier>
+        <prism:number>0</prism:number>
+        <dc:identifier>ISSN 0361-0918</dc:identifier>
+    </bib:Journal>
+    <bib:Article rdf:about="https://doi.org/10.1007/s00500-024-09889-4">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1433-7479"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Abusaif</foaf:surname>
+                        <foaf:givenName>Ihab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kuş</foaf:surname>
+                        <foaf:givenName>Coşkun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_6"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fisher scoring algorithm</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Zero-inflated negative binomial distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Zero-inflated poisson distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Multiple arbitrarily inflated negative binomial regression model and its application</dc:title>
+        <dcterms:abstract>This paper introduces a novel modification of the negative binomial distribution, which serves as a generalization encompassing both negative binomial and zero-inflated negative binomial distributions. This innovative distribution offers flexibility by accommodating an arbitrary number of inflation points at various locations. The paper explores key distributional properties associated with this modified distribution. Additionally, this study proposes several estimators designed to obtain estimates for the unknown parameters. Furthermore, the paper introduces a new count regression model that utilizes the modified distribution. To assess the performance of the proposed distribution and the count regression model, a comprehensive Monte Carlo simulation study is conducted. In the final stage of the paper, a real-world dataset is scrutinized to ascertain the superiority of the proposed model. This empirical analysis contributes to validating the practical applicability and effectiveness of the newly introduced distribution in comparison to existing models.</dcterms:abstract>
+        <dc:date>2024-10-01</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s00500-024-09889-4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:11:57</dcterms:dateSubmitted>
+        <bib:pages>10911-10928</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1433-7479">
+        <prism:volume>28</prism:volume>
+        <dc:title>Soft Computing</dc:title>
+        <dc:identifier>DOI 10.1007/s00500-024-09889-4</dc:identifier>
+        <prism:number>19</prism:number>
+        <dcterms:alternative>Soft Comput</dcterms:alternative>
+        <dc:identifier>ISSN 1433-7479</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_6">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/6/Abusaif and Kuş - 2024 - Multiple arbitrarily inflated negative binomial regression model and its application.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1007%2Fs00500-024-09889-4.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:11:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/00949655.2021.1872077">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0094-9655"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arora</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rao Chaganty</foaf:surname>
+                        <foaf:givenName>N.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sellers</foaf:surname>
+                        <foaf:givenName>Kimberly F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_8"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Conway–Maxwell–Poisson distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>over-dispersion</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>under-dispersion</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Zero-inflated regression models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A flexible regression model for zero- and k-inflated count data</dc:title>
+        <dcterms:abstract>Count data with inflated zeros commonly occur in numerous research studies. Accordingly, there is substantive literature regarding zero-inflated Poisson and analogous generalizable count regression models that account for data dispersion via excess zeros. Scenarios exist, however, where another count k&gt;0 tends to be inflated, thus there remains the need to develop a flexible regression model that can accommodate both inflated frequencies and any inherent data dispersion. This work achieves this goal by employing the Conway–Maxwell–Poisson (CMP) distribution. We develop a zero- and k-inflated Conway–Maxwell–Poisson (ZkICMP) distribution and corresponding regression that addresses over- and under-dispersed count data. We further discuss parameter estimation and other diagnostics by analytical and numerical methods, and illustrate superior performance of the ZkICMP regression via real data examples.</dcterms:abstract>
+        <dc:date>2021-06-13</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/00949655.2021.1872077</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:13:33</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/00949655.2021.1872077</dc:description>
+        <bib:pages>1815-1845</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0094-9655">
+        <prism:volume>91</prism:volume>
+        <dc:title>Journal of Statistical Computation and Simulation</dc:title>
+        <dc:identifier>DOI 10.1080/00949655.2021.1872077</dc:identifier>
+        <prism:number>9</prism:number>
+        <dc:identifier>ISSN 0094-9655</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_8">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/8/Arora et al. - 2021 - A flexible regression model for zero- and k-inflated count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/00949655.2021.1872077</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:13:39</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/02664763.2020.1757049">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0266-4763"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ghasemi</foaf:surname>
+                        <foaf:givenName>Erfan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Akbarzadeh Baghban</foaf:surname>
+                        <foaf:givenName>Alireza</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zayeri</foaf:surname>
+                        <foaf:givenName>Farid</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pourhoseingholi</foaf:surname>
+                        <foaf:givenName>Asma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Safavi</foaf:surname>
+                        <foaf:givenName>Seyed Mohammadreza</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_10"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>correlated data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>doubly-inflated</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Poisson regression</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>zero-inflated</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A doubly-inflated Poisson regression for correlated count data</dc:title>
+        <dcterms:abstract>Count data have emerged in many applied research areas. In recent years, there has been a considerable interest in models for count data. In modelling such data, it is common to face a large frequency of zeroes. The data are regarded as zero-inflated when the frequency of observed zeroes is larger than what is expected from a theoretical distribution such as Poisson distribution, as a standard model for analysing count data. Data analysis, using the simple Poisson model, may lead to over-dispersion. Several classes of different mixture models were proposed for handling zero-inflated data. But they do not apply to cases when inflated counts happen at some other points, in addition to zero. In these cases, a doubly-inflated Poisson model has been suggested which only be used for cross-sectional data and cannot consider correlations between observations. However, correlated count data have a large application, especially in the health and medical fields. The present study aims to introduce a Doubly-Inflated Poisson models with random effect for correlated doubly-inflated data. Then, the best performance of the proposed method is shown via different simulation scenarios. Finally, the proposed model is applied to a dental study.</dcterms:abstract>
+        <dc:date>2021-04-26</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/02664763.2020.1757049</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:15:26</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/02664763.2020.1757049</dc:description>
+        <bib:pages>1111-1127</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0266-4763">
+        <prism:volume>48</prism:volume>
+        <dc:title>Journal of Applied Statistics</dc:title>
+        <dc:identifier>DOI 10.1080/02664763.2020.1757049</dc:identifier>
+        <prism:number>6</prism:number>
+        <dc:identifier>ISSN 0266-4763</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_10">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/10/Ghasemi et al. - 2021 - A doubly-inflated Poisson regression for correlated count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/02664763.2020.1757049</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:15:29</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/03610926.2021.1898642">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0361-0926"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jornsatian</foaf:surname>
+                        <foaf:givenName>Chanakarn</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bodhisuwan</foaf:surname>
+                        <foaf:givenName>Winai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_12"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>60E05</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62E15</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62F10</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62P99</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>maximum likelihood estimator</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+                <rdf:value>negative binomial - beta exponential distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>over-dispersed</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-one inflated distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Zero-one inflated negative binomial - beta exponential distribution for count data with many zeros and ones</dc:title>
+        <dcterms:abstract>The characteristic of count data that have a high frequency of zeros and ones can be considered under a zero-one inflated distribution. In this article, we present a zero-one inflated negative binomial - beta exponential distribution to analyze for such data. This distribution shows that it is extended the mixture negative binomial with beta exponential distributions, was proposed by Pudprommarat, Bodhisuwan, and Zeephongsekul (2012). Some important properties of this distribution are discussed, which include probability mass function, moment generating function, moment about the origin, mean and variance. Additionally, some sub-models are presented. Its parameters are also derived based on the maximum likelihood estimation procedure. The applicability of the proposed distribution is demonstrated for fitting to three real data sets. We also evaluate the abilities of model selection relying on the negative log-likelihood, Akaike information criterion, mean absolute error, root mean squared error, discrete Kolmogorov–Smirnov test and Anderson-Darling tests. Results from this study indicate the zero-one inflated negative binomial - beta exponential distribution has shown the best fit for these data sets when it is compared with some sub-models and the zero-one inflated of traditional distributions.</dcterms:abstract>
+        <dc:date>2022-12-17</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/03610926.2021.1898642</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:15:49</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/03610926.2021.1898642</dc:description>
+        <bib:pages>8517-8531</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0361-0926">
+        <prism:volume>51</prism:volume>
+        <dc:title>Communications in Statistics - Theory and Methods</dc:title>
+        <dc:identifier>DOI 10.1080/03610926.2021.1898642</dc:identifier>
+        <prism:number>24</prism:number>
+        <dc:identifier>ISSN 0361-0926</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_12">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/12/Jornsatian and Bodhisuwan - 2022 - Zero-one inflated negative binomial - beta exponential distribution for count data with many zeros a.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/03610926.2021.1898642</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:15:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.researchgate.net/publication/390943588_Advances_and_Applications_in_Statistics_ON_THE_ZERO_AND_k-INFLATED_NEGATIVE_BINOMIAL_DISTRIBUTION_WITH_APPLICATIONS">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal><dc:title>ResearchGate</dc:title></bib:Journal>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_14"/>
+        <dc:title>(PDF) Advances and Applications in Statistics ON THE ZERO AND k-INFLATED NEGATIVE BINOMIAL DISTRIBUTION WITH APPLICATIONS</dc:title>
+        <dcterms:abstract>PDF | In the literature, there are a significant number of studies on mixtures and compound probability distributions used for count data with inflated... | Find, read and cite all the research you need on ResearchGate</dcterms:abstract>
+        <dc:date>2025-08-10</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.researchgate.net</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/publication/390943588_Advances_and_Applications_in_Statistics_ON_THE_ZERO_AND_k-INFLATED_NEGATIVE_BINOMIAL_DISTRIBUTION_WITH_APPLICATIONS</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:19:21</dcterms:dateSubmitted>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_14">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/14/2025 - (PDF) Advances and Applications in Statistics ON THE ZERO AND k-INFLATED NEGATIVE BINOMIAL DISTRIBUT.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.mdpi.com/2813-2203/2/1/14">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2813-2203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arora</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chaganty</foaf:surname>
+                        <foaf:givenName>N. Rao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_16"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>poisson regression</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero- and k-inflated data</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-inflated data</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>health science</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Application of Mixture Models for Doubly Inflated Count Data</dc:title>
+        <dcterms:abstract>In health and social science and other fields where count data analysis is important, zero-inflated models have been employed when the frequency of zero count is high (inflated). Due to multiple reasons, there are scenarios in which an additional count value of k &gt; 0 occurs with high frequency. The zero- and k-inflated Poisson distribution model (ZkIP) is more appropriate for such situations. The ZkIP model is a mixture distribution with three components: degenerate distributions at 0 and k count and a Poisson distribution. In this article, we propose an alternative and computationally fast expectation–maximization (EM) algorithm to obtain the parameter estimates for grouped zero and k-inflated count data. The asymptotic standard errors are derived using the complete data approach. We compare the zero- and k-inflated Poisson model with its zero-inflated and non-inflated counterparts. The best model is selected based on commonly used criteria. The theoretical results are supplemented with the analysis of two real-life datasets from health sciences.</dcterms:abstract>
+        <dc:date>2023/3</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>www.mdpi.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/2813-2203/2/1/14</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:21:45</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:description>Publisher: Multidisciplinary Digital Publishing Institute</dc:description>
+        <bib:pages>265-283</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2813-2203">
+        <prism:volume>2</prism:volume>
+        <dc:title>Analytics</dc:title>
+        <dc:identifier>DOI 10.3390/analytics2010014</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 2813-2203</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_16">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/16/Arora and Chaganty - 2023 - Application of Mixture Models for Doubly Inflated Count Data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.mdpi.com/2813-2203/2/1/14/pdf?version=1678524053</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:21:49</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/2010.16040">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kong</foaf:surname>
+                        <foaf:givenName>Shufeng</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Bai</foaf:surname>
+                        <foaf:givenName>Junwen</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lee</foaf:surname>
+                        <foaf:givenName>Jae Hee</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chen</foaf:surname>
+                        <foaf:givenName>Di</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Allyn</foaf:surname>
+                        <foaf:givenName>Andrew</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Stuart</foaf:surname>
+                        <foaf:givenName>Michelle</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pinsky</foaf:surname>
+                        <foaf:givenName>Malin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mills</foaf:surname>
+                        <foaf:givenName>Katherine</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gomes</foaf:surname>
+                        <foaf:givenName>Carla P.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_18"/>
+        <link:link rdf:resource="#item_21"/>
+        <link:link rdf:resource="#item_19"/>
+        <link:link rdf:resource="#item_20"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Artificial Intelligence</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Computer Science - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistics - Machine Learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Deep Hurdle Networks for Zero-Inflated Multi-Target Regression: Application to Multiple Species Abundance Estimation</dc:title>
+        <dcterms:abstract>A key problem in computational sustainability is to understand the distribution of species across landscapes over time. This question gives rise to challenging large-scale prediction problems since (i) hundreds of species have to be simultaneously modeled and (ii) the survey data are usually inflated with zeros due to the absence of species for a large number of sites. The problem of tackling both issues simultaneously, which we refer to as the zero-inflated multi-target regression problem, has not been addressed by previous methods in statistics and machine learning. In this paper, we propose a novel deep model for the zero-inflated multi-target regression problem. To this end, we first model the joint distribution of multiple response variables as a multivariate probit model and then couple the positive outcomes with a multivariate log-normal distribution. By penalizing the difference between the two distributions' covariance matrices, a link between both distributions is established. The whole model is cast as an end-to-end learning framework and we provide an efficient learning algorithm for our model that can be fully implemented on GPUs. We show that our model outperforms the existing state-of-the-art baselines on two challenging real-world species distribution datasets concerning bird and fish populations.</dcterms:abstract>
+        <dc:date>2020-10-30</dc:date>
+        <z:shortTitle>Deep Hurdle Networks for Zero-Inflated Multi-Target Regression</z:shortTitle>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2010.16040</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:24:41</dcterms:dateSubmitted>
+        <dc:description>arXiv:2010.16040 [cs]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.2010.16040</dc:identifier>
+        <prism:number>arXiv:2010.16040</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_18">
+       <rdf:value>Comment: Accepted by IJCAI 2020</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_21">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/21/DeepHurdleNetworks.pdf"/>
+        <dc:title>DeepHurdleNetworks</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_19">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/19/Kong et al. - 2020 - Deep Hurdle Networks for Zero-Inflated Multi-Target Regression Application to Multiple Species Abun.pdf"/>
+        <dc:title>Preprint PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/pdf/2010.16040v1</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:24:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_20">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/20/2010.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/2010.16040</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:24:46</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/00949655.2021.1970162">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>93</prism:volume>
+                <dc:title>Journal of Statistical Computation and Simulation</dc:title>
+                <dc:identifier>DOI 10.1080/00949655.2021.1970162</dc:identifier>
+                <prism:number>6</prism:number>
+                <dc:identifier>ISSN 0094-9655</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sun</foaf:surname>
+                        <foaf:givenName>Yuan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Zhao</foaf:surname>
+                        <foaf:givenName>Shishun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tian</foaf:surname>
+                        <foaf:givenName>Guo-Liang</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tang</foaf:surname>
+                        <foaf:givenName>Man-Lai</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Li</foaf:surname>
+                        <foaf:givenName>Tao</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_23"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Fisher scoring algorithm</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Bootstrap confidence intervals</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-and-one-inflated Poisson model</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-one-two-inflated Poisson distribution</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Likelihood-based methods for the zero-one-two inflated Poisson model with applications to biomedicine</dc:title>
+        <dcterms:abstract>To model count data with excess zeros, ones and twos, for the first time we introduce a so-called zero-one-two-inflated Poisson (ZOTIP) distribution, including the zero-inflated Poisson (ZIP) and the zero-and-one-inflated Poisson (ZOIP) distributions as two special cases. We establish three equivalent stochastic representations for the ZOTIP random variable to develop important distributional properties of the ZOTIP distribution. The Fisher scoring and expectation–maximization (EM) algorithms are derived to obtain the maximum likelihood estimates of parameters of interest. Bootstrap confidence intervals are also provided. Testing hypotheses are considered, simulation studies are conducted, and two real data sets are used to illustrate the proposed methods.</dcterms:abstract>
+        <dc:date>2023-04-13</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/00949655.2021.1970162</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:28:13</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/00949655.2021.1970162</dc:description>
+        <bib:pages>956-982</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_23">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/23/Sun et al. - 2023 - Likelihood-based methods for the zero-one-two inflated Poisson model with applications to biomedicin.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/00949655.2021.1970162</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:28:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.mdpi.com/2076-3417/14/23/10790">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2076-3417"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ben Khedher</foaf:surname>
+                        <foaf:givenName>Moataz Bellah</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Yun</foaf:surname>
+                        <foaf:givenName>Dukgeun</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_25"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>accident analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>CatBoost</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>crash frequency</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>road safety</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>SHAP</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>An Interpretable Machine Learning-Based Hurdle Model for Zero-Inflated Road Crash Frequency Data Analysis: Real-World Assessment and Validation</dc:title>
+        <dcterms:abstract>Road traffic crashes pose significant economic and public health burdens, necessitating an in-depth understanding of crash causation and its links to underlying factors. This study introduces a machine learning-based hurdle model framework tailored for analyzing zero-inflated crash frequency data, addressing the limitations of traditional statistical models like the Poisson and negative binomial models, which struggle with zero-inflation and overdispersion. The research employs a two-stage modeling process using CatBoost. The first stage uses binary classification to identify road segments with potential crash occurrences, applying a customized loss function to tackle data imbalance. The second stage predicts crash frequency, also utilizing a customized loss function for count data. SHapley Additive exPlanations (SHAP) analysis interprets the model outcomes, providing insights into factors affecting crash likelihood and frequency. This study validates the model’s performance with real-world crash data from 2011 to 2015 in South Korea, demonstrating superior accuracy in both the classification and regression stages compared to other machine learning algorithms and traditional models. These findings have significant implications for traffic safety research and policymaking, offering stakeholders a more accurate and interpretable tool for crash data analysis to develop targeted safety interventions.</dcterms:abstract>
+        <dc:date>2024/1</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>An Interpretable Machine Learning-Based Hurdle Model for Zero-Inflated Road Crash Frequency Data Analysis</z:shortTitle>
+        <z:libraryCatalog>www.mdpi.com</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.mdpi.com/2076-3417/14/23/10790</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:29:34</dcterms:dateSubmitted>
+        <dc:rights>http://creativecommons.org/licenses/by/3.0/</dc:rights>
+        <dc:description>Publisher: Multidisciplinary Digital Publishing Institute</dc:description>
+        <bib:pages>10790</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2076-3417">
+        <prism:volume>14</prism:volume>
+        <dc:title>Applied Sciences</dc:title>
+        <dc:identifier>DOI 10.3390/app142310790</dc:identifier>
+        <prism:number>23</prism:number>
+        <dc:identifier>ISSN 2076-3417</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_25">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/25/Ben Khedher and Yun - 2024 - An Interpretable Machine Learning-Based Hurdle Model for Zero-Inflated Road Crash Frequency Data Ana.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.mdpi.com/2076-3417/14/23/10790/pdf?version=1732188451</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:29:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012599">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1935-2735"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Francisco</foaf:surname>
+                        <foaf:givenName>Micanaldo Ernesto</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Carvajal</foaf:surname>
+                        <foaf:givenName>Thaddeus M.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Watanabe</foaf:surname>
+                        <foaf:givenName>Kozo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_27"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Algorithms</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Artificial neural networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Dengue fever</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Epidemiology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Forecasting</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Land use</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning algorithms</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Wind</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Hybrid Machine Learning Approach to Zero-Inflated Data Improves Accuracy of Dengue Prediction</dc:title>
+        <dcterms:abstract>Background Spatiotemporal dengue forecasting using machine learning (ML) can contribute to the development of prevention and control strategies for impending dengue outbreaks. However, training data for dengue incidence may be inflated with frequent zero values because of the rarity of cases, which lowers the prediction accuracy. This study aimed to understand the influence of spatiotemporal resolutions of data on the accuracy of dengue incidence prediction using ML models, to understand how the influence of spatiotemporal resolution differs between quantitative and qualitative predictions of dengue incidence, and to improve the accuracy of dengue incidence prediction with zero-inflated data. Methodology We predicted dengue incidence at six spatiotemporal resolutions and compared their prediction accuracy. Six ML algorithms were compared: generalized additive models, random forests, conditional inference forest, artificial neural networks, support vector machines and regression, and extreme gradient boosting. Data from 2009 to 2012 were used for training, and data from 2013 were used for model validation with quantitative and qualitative dengue variables. To address the inaccuracy in the quantitative prediction of dengue incidence due to zero-inflated data at fine spatiotemporal scales, we developed a hybrid approach in which the second-stage quantitative prediction is performed only when/where the first-stage qualitative model predicts the occurrence of dengue cases. Principal findings At higher resolutions, the dengue incidence data were zero-inflated, which was insufficient for quantitative pattern extraction of relationships between dengue incidence and environmental variables by ML. Qualitative models, used as binary variables, eased the effect of data distribution. Our novel hybrid approach of combining qualitative and quantitative predictions demonstrated high potential for predicting zero-inflated or rare phenomena, such as dengue. Significance Our research contributes valuable insights to the field of spatiotemporal dengue prediction and provides an alternative solution to enhance prediction accuracy in zero-inflated data where hurdle or zero-inflated models cannot be applied.</dcterms:abstract>
+        <dc:date>21 Oct 2024</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>PLoS Journals</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012599</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:30:46</dcterms:dateSubmitted>
+        <dc:description>Publisher: Public Library of Science</dc:description>
+        <bib:pages>e0012599</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1935-2735">
+        <prism:volume>18</prism:volume>
+        <dc:title>PLOS Neglected Tropical Diseases</dc:title>
+        <dc:identifier>DOI 10.1371/journal.pntd.0012599</dc:identifier>
+        <prism:number>10</prism:number>
+        <dcterms:alternative>PLOS Neglected Tropical Diseases</dcterms:alternative>
+        <dc:identifier>ISSN 1935-2735</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_27">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/27/Francisco et al. - 2024 - Hybrid Machine Learning Approach to Zero-Inflated Data Improves Accuracy of Dengue Prediction.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/plosntds/article/file?id=10.1371/journal.pntd.0012599&amp;type=printable</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:30:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/interpretable-zeroinflated-neural-network-models-for-predicting-admission-counts/A2F658C3E55A0380748530D5FA830379">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1748-4995,%201748-5002"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jose</foaf:surname>
+                        <foaf:givenName>Alex</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Macdonald</foaf:surname>
+                        <foaf:givenName>Angus S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tzougas</foaf:surname>
+                        <foaf:givenName>George</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Streftaris</foaf:surname>
+                        <foaf:givenName>George</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_29"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>actuarial</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>admission rates</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>morbidity</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>neural network</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Predictive modeling</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>zero-inflated neural network</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Interpretable zero-inflated neural network models for predicting admission counts</dc:title>
+        <dcterms:abstract>In this paper, we construct interpretable zero-inflated neural network models for modeling hospital admission counts related to respiratory diseases among a health-insured population and their dependants in the United States. In particular, we exemplify our approach by considering the zero-inflated Poisson neural network (ZIPNN), and we follow the combined actuarial neural network (CANN) approach for developing zero-inflated combined actuarial neural network (ZIPCANN) models for modeling admission rates, which can accommodate the excess zero nature of admission counts data. Furthermore, we adopt the LocalGLMnet approach (Richman &amp; Wüthrich (2023). Scandinavian Actuarial Journal, 2023(1), 71–95.) for interpreting the ZIPNN model results. This facilitates the analysis of the impact of a number of socio-demographic factors on the admission rates related to respiratory disease while benefiting from an improved predictive performance. The real-life utility of the methodologies developed as part of this work lies in the fact that they facilitate accurate rate setting, in addition to offering the potential to inform health interventions.</dcterms:abstract>
+        <dc:date>2024/11</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Cambridge University Press</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/interpretable-zeroinflated-neural-network-models-for-predicting-admission-counts/A2F658C3E55A0380748530D5FA830379</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:31:52</dcterms:dateSubmitted>
+        <bib:pages>644-674</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1748-4995,%201748-5002">
+        <prism:volume>18</prism:volume>
+        <dc:title>Annals of Actuarial Science</dc:title>
+        <dc:identifier>DOI 10.1017/S1748499524000058</dc:identifier>
+        <prism:number>3</prism:number>
+        <dc:identifier>ISSN 1748-4995, 1748-5002</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_29">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/29/Jose et al. - 2024 - Interpretable zero-inflated neural network models for predicting admission counts.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.cambridge.org/core/services/aop-cambridge-core/content/view/A2F658C3E55A0380748530D5FA830379/S1748499524000058a.pdf/div-class-title-interpretable-zero-inflated-neural-network-models-for-predicting-admission-counts-div.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:31:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7189957/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2228-7795"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Haghani</foaf:surname>
+                        <foaf:givenName>Shima</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sedehi</foaf:surname>
+                        <foaf:givenName>Morteza</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kheiri</foaf:surname>
+                        <foaf:givenName>Soleiman</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_32"/>
+        <link:link rdf:resource="#item_31"/>
+        <dc:title>Artificial Neural Network to Modeling Zero-inflated Count Data: Application to Predicting Number of Return to Blood Donation</dc:title>
+        <dcterms:abstract>Background: Traditional statistical models often are based on certain presuppositions and limitations
+that may not presence in actual data and lead to turbulence in estimation or prediction. In these
+situations, artificial neural networks (ANNs) could be suitable alternative rather than classical statistical
+methods.
+, 
+Study design: A prospective cohort study.
+, 
+Methods: The study was conducted in Shahrekord Blood Transfusion Center, Shahrekord, central
+Iran, on blood donors from 2008-2009. The accuracy of the proposed model to prediction of number
+of return to blood donations was compared with classical statistical models. A number of 864 donors
+who had a first-time successful donation were followed for five years. Number of return for blood
+donation was considered as response variable. Poisson regression (PR), negative binomial
+regression (NBR), zero-inflated Poisson regression (ZIPR) and zero-inflated negative binomial
+regression (ZINBR) as well as ANN model were fitted to data. MSE criterion was used to compare
+models. To fitting the models, STATISTICA 10 and, R 3.2.2 was used
+, 
+Results: The MSE of PR, NBR, ZIPR, ZINBR and ANN models was obtained 2.71, 1.01, 1.54, 0.094
+and 0.056 for the training and 4.05, 9.89, 3.99, 2.53 and 0.27 for the test data, respectively.
+, 
+Conclusions: The ANN model had the least MSE in both training, and test data set and has a better
+performance than classic models. ANN could be a suitable alternative for modeling such data because
+of fewer restrictions.</dcterms:abstract>
+        <dc:date>2017-9-02</dc:date>
+        <z:shortTitle>Artificial Neural Network to Modeling Zero-inflated Count Data</z:shortTitle>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7189957/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:34:07</dcterms:dateSubmitted>
+        <dc:description>PMID: null
+PMCID: PMC7189957</dc:description>
+        <bib:pages>392</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2228-7795">
+        <prism:volume>17</prism:volume>
+        <dc:title>Journal of Research in Health Sciences</dc:title>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>J Res Health Sci</dcterms:alternative>
+        <dc:identifier>ISSN 2228-7795</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_32">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/32/Haghani et al. - 2017 - Artificial Neural Network to Modeling Zero-inflated Count Data Application to Predicting Number of.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_31">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7189957/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:34:08</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11687910/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1932-6203"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Alomair</foaf:surname>
+                        <foaf:givenName>Gadir</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_35"/>
+        <link:link rdf:resource="#item_34"/>
+        <dc:title>Predictive performance of count regression models versus machine learning techniques: A comparative analysis using an automobile insurance claims frequency dataset</dc:title>
+        <dcterms:abstract>Accurate forecasting of claim frequency in automobile insurance is essential for insurers to assess risks effectively and establish appropriate pricing policies. Traditional methods typically rely on a Poisson distribution for modeling claim counts; however, this approach can be inadequate due to frequent zero-claim periods, leading to zero inflation in the data. Zero inflation occurs when more zeros are observed than expected under standard Poisson or negative binomial (NB) models. While machine learning (ML) techniques have been explored for predictive analytics in other contexts, their application to zero-inflated insurance data remains limited. This study investigates the utility of ML in improving forecast accuracy under conditions of zero-inflation, a data characteristic common in automobile insurance. The research involved a comparative evaluation of several models, including Poisson, NB, zero-inflated Poisson (ZIP), hurdle Poisson, zero-inflated negative binomial (ZINB), hurdle negative binomial, random forest (RF), support vector machine (SVM), and artificial neural network (ANN) on an insurance dataset. The performance of these models was assessed using mean absolute error. The results reveal that the SVM model outperforms others in predictive accuracy, particularly in handling zero-inflation, followed by the ZIP and ZINB models. In contrast, the traditional Poisson and NB models showed lower predictive capabilities. By addressing the challenge of zero-inflation in automobile claim data, this study offers insights into improving the accuracy of claim frequency predictions. Although this study is based on a single dataset, the findings provide valuable perspectives on enhancing prediction accuracy and improving risk management practices in the insurance industry.</dcterms:abstract>
+        <dc:date>2024-12-31</dc:date>
+        <z:shortTitle>Predictive performance of count regression models versus machine learning techniques</z:shortTitle>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11687910/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:37:48</dcterms:dateSubmitted>
+        <dc:description>PMID: 39739961
+PMCID: PMC11687910</dc:description>
+        <bib:pages>e0314975</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1932-6203">
+        <prism:volume>19</prism:volume>
+        <dc:title>PLOS ONE</dc:title>
+        <dc:identifier>DOI 10.1371/journal.pone.0314975</dc:identifier>
+        <prism:number>12</prism:number>
+        <dcterms:alternative>PLoS One</dcterms:alternative>
+        <dc:identifier>ISSN 1932-6203</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_35">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/35/Alomair - 2024 - Predictive performance of count regression models versus machine learning techniques A comparative.pdf"/>
+        <dc:title>PubMed Central Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pmc.ncbi.nlm.nih.gov/articles/PMC11687910/pdf/pone.0314975.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:37:51</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>PubMed Central Link</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11687910/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:37:48</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_37">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+           <bib:Journal></bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sakthivel</foaf:surname>
+                        <foaf:givenName>K M</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rajitha</foaf:surname>
+                        <foaf:givenName>C S</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_36"/>
+        <dc:title>A Comparative Study of Zero-inflated, Hurdle Models with Artificial Neural Network in Claim Count Modeling</dc:title>
+        <dcterms:abstract>Modeling of claim frequency is a vital factor in the non-life insurance industry. The claim count data in non-life insurance may not follow the traditional regression count data models with the use of Poisson or negative binomial distribution in numerous circumstances due to excessive number of zeros in the real data set. If the excessive number of zeros is not considered with sufficient weight, it will lead to information shortage to get a accurate rate making for the non-life insurance portfolio. In this paper we compared different claim count models such as zero-inflated Poisson (ZIP) regression model, hurdle model with back propagation neural network (BPNN) for modeling the count data which has excessive number of zeros. We shown from our empirical study that BPNN outperforms the conventionally used models and provided better fit to claim count data in terms of mean squared error (MSE).</dcterms:abstract>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Zotero</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_36">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/36/Sakthivel and Rajitha - A Comparative Study of Zero-inflated, Hurdle Models with Artificial Neural Network in Claim Count Mo.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.ripublication.com/ijss17/ijssv12n2_09.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:40:13</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="urn:isbn:978-989-758-521-0">
+        <z:itemType>conferencePaper</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:identifier>ISBN 978-989-758-521-0</dc:identifier>
+                <dc:title>Proceedings of the 10th International Conference on Data Science, Technology and Applications</dc:title>
+                <dc:identifier>DOI 10.5220/0010547700290038</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                        <vcard:locality>Online Streaming, --- Select a Country ---</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+                <foaf:name>SCITEPRESS - Science and Technology Publications</foaf:name>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Arora</foaf:surname>
+                        <foaf:givenName>Monika</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kalyani</foaf:surname>
+                        <foaf:givenName>Yash</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Shanker</foaf:surname>
+                        <foaf:givenName>Shivam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <dc:title>A Comparative Study on Inflated and Dispersed Count Data:</dc:title>
+        <dcterms:abstract>The availability of zero inﬂated count data has led to the demonstration of various statistical models and machine learning algorithms to be applied in diverse ﬁelds such as healthcare, economics and travel. However, in real life there could be a count k &gt; 0 that is inﬂated. There are only a few studies on k− inﬂated count models. To the best of our knowledge, there is no article that demonstrates the machine learning algorithms on such data sets. We apply existing k− inﬂated count models as well as machine learning algorithms on travel data to compare the prediction and ﬁtness of the models and ﬁnd the signiﬁcant covariates. Our study shows that the k− inﬂated models provide a good ﬁt to the data, however, the predictions from machine learning algorithms are superior. This study can be extended further to include other artiﬁcial neural network approaches on a larger data set.</dcterms:abstract>
+        <dc:date>2021</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>A Comparative Study on Inflated and Dispersed Count Data</z:shortTitle>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scitepress.org/DigitalLibrary/Link.aspx?doi=10.5220/0010547700290038</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:42:11</dcterms:dateSubmitted>
+        <bib:pages>29-38</bib:pages>
+        <bib:presentedAt>
+            <bib:Conference>
+                <dc:title>10th International Conference on Data Science, Technology and Applications</dc:title>
+            </bib:Conference>
+        </bib:presentedAt>
+    </rdf:Description>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/39/Arora et al. - 2021 - A Comparative Study on Inflated and Dispersed Count Data.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.scitepress.org/Papers/2021/105477/105477.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:42:07</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0306186">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>19</prism:volume>
+                <dc:title>PLOS ONE</dc:title>
+                <dc:identifier>DOI 10.1371/journal.pone.0306186</dc:identifier>
+                <prism:number>6</prism:number>
+                <dcterms:alternative>PLOS ONE</dcterms:alternative>
+                <dc:identifier>ISSN 1932-6203</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Kumar</foaf:surname>
+                        <foaf:givenName>Ashit</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ranjan</foaf:surname>
+                        <foaf:givenName>Pritam</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Koley</foaf:surname>
+                        <foaf:givenName>Arnab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Danish</foaf:surname>
+                        <foaf:givenName>Shadab</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_43"/>
+        <link:link rdf:resource="#item_41"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Artificial neural networks</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Forecasting</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Data visualization</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Patents</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Polynomials</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Statistical distributions</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Trees</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A new hybrid machine learning model for predicting the renewal life of patents</dc:title>
+        <dcterms:abstract>In almost every country, patents need to be renewed multiple times after they are granted. A patentee assesses the value of the patent and then pays a renewal fee to keep it active for another stipulated period. The factors that characterize the value of a patent is subjective. This paper aims to address the research gap of building an accurate model for predicting the renewal life (often considered as a substitute for the patent value) of Indian patents, and identification of significant factors that influence the renewal life. This study uses an extensive data set collected from the Indian Patent Office for all granted patents filed between 1995 and 2005. The popular statistical and machine learning algorithms do not result in accurate predictive models, because the patent renewal life distribution (at least for the Indian patents) shows unusual spikes at the two extreme values, which makes the modeling task more challenging. We propose a new two-stage hybrid model by combining an efficient multi-class classifier and a binomial regression model for predicting the complex renewal data distribution. We conducted a comparative analysis of the proposed model with several state-of-the-art machine learning and statistical models. The results show that the proposed hybrid model gives 90% accuracy as compared to the best competitor which gives only 40% accuracy.</dcterms:abstract>
+        <dc:date>26 Jun 2024</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>PLoS Journals</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0306186</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:45:40</dcterms:dateSubmitted>
+        <dc:description>Publisher: Public Library of Science</dc:description>
+        <bib:pages>e0306186</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_43">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/43/Kumar et al. - 2024 - A new hybrid machine learning model for predicting the renewal life of patents.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0306186&amp;type=printable</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:45:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_41">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/41/Inflated-Count-Data-Model-Predictive-Model-for-Indian-Patent-Renewal-Life-TH48.pdf"/>
+        <dc:title>Inflated-Count-Data-Model-Predictive-Model-for-Indian-Patent-Renewal-Life-TH48.pdf</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iimidr.ac.in/wp-content/uploads/2025/04/Inflated-Count-Data-Model-Predictive-Model-for-Indian-Patent-Renewal-Life-TH48.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-20 05:42:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.jstor.org/stable/2532086">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0006-341X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Thall</foaf:surname>
+                        <foaf:givenName>Peter F.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Vail</foaf:surname>
+                        <foaf:givenName>Stephen C.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_47"/>
+        <dc:title>Some Covariance Models for Longitudinal Count Data with Overdispersion</dc:title>
+        <dcterms:abstract>A family of covariance models for longitudinal counts with predictive covariates is presented. These models account for overdispersion, heteroscedasticity, and dependence among repeated observations. The approach is a quasi-likelihood regression similar to the formulation given by Liang and Zeger (1986, Biometrika 73, 13-22). Generalized estimating equations for both the covariate parameters and the variance-covariance parameters are presented. Large-sample properties of the parameter estimates are derived. The proposed methods are illustrated by an analysis of epileptic seizure count data arising from a study of progabide as an adjuvant therapy for partial seizures.</dcterms:abstract>
+        <dc:date>1990</dc:date>
+        <z:libraryCatalog>JSTOR</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://www.jstor.org/stable/2532086</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-21 09:34:47</dcterms:dateSubmitted>
+        <dc:description>Publisher: [Wiley, International Biometric Society]</dc:description>
+        <bib:pages>657-671</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0006-341X">
+        <prism:volume>46</prism:volume>
+        <dc:title>Biometrics</dc:title>
+        <dc:identifier>DOI 10.2307/2532086</dc:identifier>
+        <prism:number>3</prism:number>
+        <dc:identifier>ISSN 0006-341X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_47">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/47/Thall and Vail - 1990 - Some Covariance Models for Longitudinal Count Data with Overdispersion.pdf"/>
+        <dc:title>JSTOR Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.jstor.org/stable/pdfplus/10.2307/2532086.pdf?acceptTC=true</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-21 09:34:52</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.tandfonline.com/doi/abs/10.1080/00401706.1992.10485228">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0040-1706"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lambert</foaf:surname>
+                        <foaf:givenName>Diane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_52"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>EM algorithm</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Negative binomial</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Overdispersion</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Positive Poisson</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Quality control</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Zero-Inflated Poisson Regression, With an Application to Defects in Manufacturing</dc:title>
+        <dcterms:abstract>Zero-inflated Poisson (ZIP) regression is a model for count data with excess zeros. It assumes that with probability p the only possible observation is 0, and with probability 1 – p, a Poisson(λ) random variable is observed. For example, when manufacturing equipment is properly aligned, defects may be nearly impossible. But when it is misaligned, defects may occur according to a Poisson(λ) distribution. Both the probability p of the perfect, zero defect state and the mean number of defects λ in the imperfect state may depend on covariates. Sometimes p and λ are unrelated; other times p is a simple function of λ such as p = l/(1 + λ T ) for an unknown constant T . In either case, ZIP regression models are easy to fit. The maximum likelihood estimates (MLE's) are approximately normal in large samples, and confidence intervals can be constructed by inverting likelihood ratio tests or using the approximate normality of the MLE's. Simulations suggest that the confidence intervals based on likelihood ratio tests are better, however. Finally, ZIP regression models are not only easy to interpret, but they can also lead to more refined data analyses. For example, in an experiment concerning soldering defects on printed wiring boards, two sets of conditions gave about the same mean number of defects, but the perfect state was more likely under one set of conditions and the mean number of defects in the imperfect state was smaller under the other set of conditions; that is, ZIP regression can show not only which conditions give lower mean number of defects but also why the means are lower.</dcterms:abstract>
+        <dc:date>1992-02-01</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/abs/10.1080/00401706.1992.10485228</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-27 02:35:05</dcterms:dateSubmitted>
+        <dc:description>Publisher: ASA Website
+_eprint: https://www.tandfonline.com/doi/pdf/10.1080/00401706.1992.10485228</dc:description>
+        <bib:pages>1-14</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0040-1706">
+        <prism:volume>34</prism:volume>
+        <dc:title>Technometrics</dc:title>
+        <dc:identifier>DOI 10.1080/00401706.1992.10485228</dc:identifier>
+        <prism:number>1</prism:number>
+        <dc:identifier>ISSN 0040-1706</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_52">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/52/Lambert - 1992 - Zero-Inflated Poisson Regression, With an Application to Defects in Manufacturing.pdf"/>
+        <dc:title>PDF</dc:title>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_53">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>60</prism:volume>
+                <dc:title>International Journal of Psychology</dc:title>
+                <dc:identifier>DOI 10.1002/ijop.70042</dc:identifier>
+                <dcterms:alternative>International Journal of Psychology</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mabire</foaf:surname>
+                        <foaf:givenName>Renaud</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_54"/>
+        <dc:title>Hurdle Models in Psychology—A Practical Guide for Inflated Data</dc:title>
+        <dcterms:abstract>In psychological research, variables often exhibit point‐mass inflation—for example, many zero responses or other boundary lumps—that defy standard regression techniques. Hurdle models address this challenge by separating the zero‐generating process from the distribution of nonzero (or non‐boundary) observations, thereby allowing for more accurate modelling of behaviour and outcomes. In this paper, I introduce the conceptual basis of Hurdle models and demonstrate how they can be applied to count data as well as other types of data (e.g., continuous variables with excess zeros). Using a step‐by‐step tutorial in R, I illustrate how the two‐part hurdle structure—consisting of a binary component for point‐mass observations and a truncated distribution for positive (or above‐threshold) values—provides nuanced insights that simpler models often miss. To illustrate this approach, I walk through a fictional dataset examining home‐based HIV testing among men who have sex with men, highlighting the Hurdle model's ability to simultaneously handle overdispersion and excess zeros. Emphasising iterative model evaluation, goodness‐of‐fit checks and a series of practical recommendations, this paper aims to equip psychologists with a robust analytical framework that promotes deeper, theory‐aligned interpretations of data—ultimately fostering innovative research in diverse areas of psychological science.</dcterms:abstract>
+        <dc:date>2025-04-18</dc:date>
+        <z:libraryCatalog>ResearchGate</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_54">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/54/Mabire - 2025 - Hurdle Models in Psychology—A Practical Guide for Inflated Data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/profile/Renaud-Mabire/publication/390940395_Hurdle_Models_in_Psychology-A_Practical_Guide_for_Inflated_Data/links/6870b32cae516743559be880/Hurdle-Models-in-Psychology-A-Practical-Guide-for-Inflated-Data.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-27 03:07:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.sciencedirect.com/science/article/pii/S0167715225001245">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:0167-7152"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Rafiou</foaf:surname>
+                        <foaf:givenName>A. D.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Deme</foaf:surname>
+                        <foaf:givenName>S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Izaddine</foaf:surname>
+                        <foaf:givenName>H. G.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Dabye</foaf:surname>
+                        <foaf:givenName>A. S.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_56"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Anderson–darling test</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Asymptotically parameter free test</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Inhomogeneous poisson process</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Scale and shift parameters</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Note on the Anderson–Darling type test for Poisson processes with shift and scale parameters</dc:title>
+        <dcterms:abstract>We present a goodness-of-fit test designed for inhomogeneous Poisson processes where the scale and shift parameters are unknown. Our approach involves a test statistic of Anderson–Darling type, and we analyze its asymptotic properties. We prove that, under the null hypothesis, the asymptotic distribution of this statistic is independent of the unknown parameters. Additionally, we establish that the Anderson–Darling type test is consistent for the alternative hypothesis.</dcterms:abstract>
+        <dc:date>2025-11-01</dc:date>
+        <z:libraryCatalog>ScienceDirect</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0167715225001245</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-27 04:50:51</dcterms:dateSubmitted>
+        <bib:pages>110479</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:0167-7152">
+        <prism:volume>226</prism:volume>
+        <dc:title>Statistics &amp; Probability Letters</dc:title>
+        <dc:identifier>DOI 10.1016/j.spl.2025.110479</dc:identifier>
+        <dcterms:alternative>Statistics &amp; Probability Letters</dcterms:alternative>
+        <dc:identifier>ISSN 0167-7152</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_56">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/56/S0167715225001245.html"/>
+        <dc:title>ScienceDirect Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.sciencedirect.com/science/article/pii/S0167715225001245</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-08-27 04:51:05</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_57">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>88</prism:volume>
+                <dc:title>Advances and Applications in Statistics</dc:title>
+                <dc:identifier>DOI 10.17654/0972361723037</dc:identifier>
+                <dcterms:alternative>Advances and Applications in Statistics</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Jay</foaf:surname>
+                        <foaf:givenName>Ian</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Serra</foaf:surname>
+                        <foaf:givenName>A</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Polestico</foaf:surname>
+                        <foaf:givenName>Daisy Lou</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Polestico</foaf:surname>
+                        <foaf:givenName>L</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_58"/>
+        <dc:title>ON ZERO AND k INFLATED NEGATIVE BINOMIAL FOR COUNT DATA WITH INFLATED FREQUENCIES</dc:title>
+        <dcterms:abstract>In the literature, there is a significant number of studies on mixtures and compound probability distributions used for count data with inflated frequencies. This study extended some existing zero-inflated distributions, by considering the flexibility of peaks in the data with excessive counts other than zeros and handle an overdispersion in the data. Moreover, this study formulated a proposed zero and k inflated negative binomial (ZkINB) distribution which is a mixture of a multinomial logistic and negative binomial distribution. The multinomial logistic component captures the occurrence of excessive counts, at zero and at k = 0, while the negative binomial component captures the counts that are assumed to follow a negative binomial distribution. The probability mass function (pmf) and the moment generating function (mgf) of the distribution are derived in order to compute some vital structural properties of the formulated distribution, such as the mean and the variance. Examples show that the formulated Ian Jay A. Serra and Daisy Lou L. Polestico 2 ZkINB seems to capture better the distributions as compared with other existing distributions for inflated count data.</dcterms:abstract>
+        <dc:date>2023-07-31</dc:date>
+        <z:libraryCatalog>ResearchGate</z:libraryCatalog>
+        <bib:pages>1-23</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_58">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/58/Jay et al. - 2023 - ON ZERO AND k INFLATED NEGATIVE BINOMIAL FOR COUNT DATA WITH INFLATED FREQUENCIES.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/profile/Daisy-Lou-Polestico/publication/372766519_ON_ZERO_AND_k_INFLATED_NEGATIVE_BINOMIAL_FOR_COUNT_DATA_WITH_INFLATED_FREQUENCIES/links/64c705f3539d123b18d6cc73/ON-ZERO-AND-k-INFLATED-NEGATIVE-BINOMIAL-FOR-COUNT-DATA-WITH-INFLATED-FREQUENCIES.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-07 15:09:06</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://pmc.ncbi.nlm.nih.gov/articles/PMC8022945/">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2160-1836"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Montesinos-López</foaf:surname>
+                        <foaf:givenName>Osval Antonio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Montesinos-López</foaf:surname>
+                        <foaf:givenName>Abelardo</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mosqueda-Gonzalez</foaf:surname>
+                        <foaf:givenName>Brandon A</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Montesinos-López</foaf:surname>
+                        <foaf:givenName>José Cricelio</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Crossa</foaf:surname>
+                        <foaf:givenName>José</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Ramirez</foaf:surname>
+                        <foaf:givenName>Nerida Lozano</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Singh</foaf:surname>
+                        <foaf:givenName>Pawan</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Valladares-Anguiano</foaf:surname>
+                        <foaf:givenName>Felícitas Alejandra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_60"/>
+        <link:link rdf:resource="#item_61"/>
+        <dc:title>A zero altered Poisson random forest model for genomic-enabled prediction</dc:title>
+        <dcterms:abstract>In genomic selection choosing the statistical machine learning model is of paramount importance. In this paper, we present an application of a zero altered random forest model with two versions (ZAP_RF and ZAPC_RF) to deal with excess zeros in count response variables. The proposed model was compared with the conventional random forest (RF) model and with the conventional Generalized Poisson Ridge regression (GPR) using two real datasets, and we found that, in terms of prediction performance, the proposed zero inflated random forest model outperformed the conventional RF and GPR models.</dcterms:abstract>
+        <dc:date>2020-12-21</dc:date>
+        <z:libraryCatalog>PubMed Central</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pmc.ncbi.nlm.nih.gov/articles/PMC8022945/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-20 15:36:36</dcterms:dateSubmitted>
+        <dc:description>PMID: 33693599
+PMCID: PMC8022945</dc:description>
+        <bib:pages>jkaa057</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2160-1836">
+        <prism:volume>11</prism:volume>
+        <dc:title>G3: Genes|Genomes|Genetics</dc:title>
+        <dc:identifier>DOI 10.1093/g3journal/jkaa057</dc:identifier>
+        <prism:number>2</prism:number>
+        <dcterms:alternative>G3 (Bethesda)</dcterms:alternative>
+        <dc:identifier>ISSN 2160-1836</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_60">
+        <z:itemType>attachment</z:itemType>
+        <dc:title>Catalog Page</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pmc.ncbi.nlm.nih.gov/articles/PMC8022945/</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-20 15:36:36</dcterms:dateSubmitted>
+        <z:linkMode>3</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_61">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/61/Montesinos-López et al. - 2020 - A zero altered Poisson random forest model for genomic-enabled prediction.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://academic.oup.com/g3journal/article-pdf/11/2/jkaa057/37041758/jkaa057.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-20 15:36:55</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1007/s40745-023-00464-6">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2198-5812"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sidumo</foaf:surname>
+                        <foaf:givenName>Bonelwa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sonono</foaf:surname>
+                        <foaf:givenName>Energy</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Takaidza</foaf:surname>
+                        <foaf:givenName>Isaac</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_63"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Ecology</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Overdispersion</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Zero-inflation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Count Regression and Machine Learning Techniques for Zero-Inflated Overdispersed Count Data: Application to Ecological Data</dc:title>
+        <dcterms:abstract>The aim of this study is to investigate the overdispersion problem that is rampant in ecological count data. In order to explore this problem, we consider the most commonly used count regression models: the Poisson, the negative binomial, the zero-inflated Poisson and the zero-inflated negative binomial models. The performance of these count regression models is compared with the four proposed machine learning (ML) regression techniques: random forests, support vector machines, $$k-$$nearest neighbors and artificial neural networks. The mean absolute error was used to compare the performance of count regression models and ML regression models. The results suggest that ML regression models perform better compared to count regression models. The performance shown by ML regression techniques is a motivation for further research in improving methods and applications in ecological studies.</dcterms:abstract>
+        <dc:date>2024-06-01</dc:date>
+        <z:language>en</z:language>
+        <z:shortTitle>Count Regression and Machine Learning Techniques for Zero-Inflated Overdispersed Count Data</z:shortTitle>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1007/s40745-023-00464-6</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-26 15:05:58</dcterms:dateSubmitted>
+        <bib:pages>803-817</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2198-5812">
+        <prism:volume>11</prism:volume>
+        <dc:title>Annals of Data Science</dc:title>
+        <dc:identifier>DOI 10.1007/s40745-023-00464-6</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Ann. Data. Sci.</dcterms:alternative>
+        <dc:identifier>ISSN 2198-5812</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_63">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/63/Sidumo et al. - 2024 - Count Regression and Machine Learning Techniques for Zero-Inflated Overdispersed Count Data Applica.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1007%2Fs40745-023-00464-6.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-26 15:06:01</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/00949655.2019.1636991">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>89</prism:volume>
+                <dc:title>Journal of Statistical Computation and Simulation</dc:title>
+                <dc:identifier>DOI 10.1080/00949655.2019.1636991</dc:identifier>
+                <prism:number>15</prism:number>
+                <dc:identifier>ISSN 0094-9655</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moqaddasi Amiri</foaf:surname>
+                        <foaf:givenName>Mohammad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tapak</foaf:surname>
+                        <foaf:givenName>Leili</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Faradmal</foaf:surname>
+                        <foaf:givenName>Javad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Brucellosis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>hierarchical</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Kernel functions</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>least square support vector machine</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>longitudinal analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>nonlinear regression</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>random effect</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>three level</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A mixed-effects least square support vector regression model for three-level count data</dc:title>
+        <dcterms:abstract>Hierarchical study design often occurs in many areas such as epidemiology, psychology, sociology, public health, engineering, and agriculture. This imposes correlation in data structure that needs to be account for in modelling process. In this study, a three-level mixed-effects least squares support vector regression (MLS-SVR) model is proposed to extend the standard least squares support vector regression (LS-SVR) model for handling cluster correlated data. The MLS-SVR model incorporates multiple random effects which allow handling unequal number of observations for each case at non-fixed time points (a very unbalanced situation) and correlation between subjects simultaneously. The methodology consists of a regression modelling step that is performed straightforwardly by solving a linear system. The proposed model is illustrated through numerical studies on simulated data sets and a real data example on human Brucellosis frequency. The generalization performance of the proposed MLS-SVR is evaluated by comparing to ordinary LS-SVR and some other parametric models.</dcterms:abstract>
+        <dc:date>2019-10-13</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/00949655.2019.1636991</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-26 17:10:15</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/00949655.2019.1636991</dc:description>
+        <bib:pages>2801-2812</bib:pages>
+    </bib:Article>
+    <bib:Article rdf:about="#item_65">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>89</prism:volume>
+                <dc:title>Journal of Statistical Computation and Simulation</dc:title>
+                <dc:identifier>DOI 10.1080/00949655.2019.1636991</dc:identifier>
+                <prism:number>15</prism:number>
+                <dc:identifier>ISSN 0094-9655</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Moqaddasi Amiri</foaf:surname>
+                        <foaf:givenName>Mohammad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tapak</foaf:surname>
+                        <foaf:givenName>Leili</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Faradmal</foaf:surname>
+                        <foaf:givenName>Javad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_66"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Brucellosis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>hierarchical</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Kernel functions</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>least square support vector machine</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>longitudinal analysis</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>machine learning</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>nonlinear regression</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>random effect</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>three level</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A mixed-effects least square support vector regression model for three-level count data</dc:title>
+        <dcterms:abstract>Hierarchical study design often occurs in many areas such as epidemiology, psychology, sociology, public health, engineering, and agriculture. This imposes correlation in data structure that needs to be account for in modelling process. In this study, a three-level mixed-effects least squares support vector regression (MLS-SVR) model is proposed to extend the standard least squares support vector regression (LS-SVR) model for handling cluster correlated data. The MLS-SVR model incorporates multiple random effects which allow handling unequal number of observations for each case at non-fixed time points (a very unbalanced situation) and correlation between subjects simultaneously. The methodology consists of a regression modelling step that is performed straightforwardly by solving a linear system. The proposed model is illustrated through numerical studies on simulated data sets and a real data example on human Brucellosis frequency. The generalization performance of the proposed MLS-SVR is evaluated by comparing to ordinary LS-SVR and some other parametric models.</dcterms:abstract>
+        <dc:date>2019-10-13</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/00949655.2019.1636991</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-26 17:11:56</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/00949655.2019.1636991</dc:description>
+        <bib:pages>2801-2812</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_66">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/66/Moqaddasi Amiri et al. - 2019 - A mixed-effects least square support vector regression model for three-level count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/00949655.2019.1636991</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-26 17:11:59</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/03610918.2018.1498886">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>49</prism:volume>
+                <dc:title>Communications in Statistics - Simulation and Computation</dc:title>
+                <dc:identifier>DOI 10.1080/03610918.2018.1498886</dc:identifier>
+                <prism:number>4</prism:number>
+                <dc:identifier>ISSN 0361-0918</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Tüzen</foaf:surname>
+                        <foaf:givenName>Fatih</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Erbaş</foaf:surname>
+                        <foaf:givenName>Semra</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Olmuş</foaf:surname>
+                        <foaf:givenName>Hülya</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_68"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Count data</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hurdle models</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Outliers</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Zero-inflated models</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A simulation study for count data models under varying degrees of outliers and zeros</dc:title>
+        <dcterms:abstract>This study was aimed at examining the performance of count data models under various outliers and zero inflation situations with simulated data. Poisson, Negative Binomial, Zero-inflated Poisson, Zero-inflated Negative Binomial, Poisson Hurdle and Negative Binomial Hurdle models were considered to test how well each of the model fits the selected datasets having outliers and excess zeros. We found that Zero-inflated Negative Binomial and Negative Binomial Hurdle models were found to be more successful than other count data models. Also the results indicated that in some scenarios, the Negative Binomial model outperformed other models in the presence of outliers and/or excess zeros.</dcterms:abstract>
+        <dc:date>2020-04-02</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/03610918.2018.1498886</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-28 11:56:36</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/03610918.2018.1498886</dc:description>
+        <bib:pages>1078-1088</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_68">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/68/Tüzen et al. - 2020 - A simulation study for count data models under varying degrees of outliers and zeros.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/03610918.2018.1498886</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-28 11:56:42</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <rdf:Description rdf:about="http://arxiv.org/abs/1503.07012">
+        <z:itemType>preprint</z:itemType>
+        <dc:publisher>
+           <foaf:Organization><foaf:name>arXiv</foaf:name></foaf:Organization>
+        </dc:publisher>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Daly</foaf:surname>
+                        <foaf:givenName>Fraser</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Gaunt</foaf:surname>
+                        <foaf:givenName>Robert E.</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <dcterms:isReferencedBy rdf:resource="#item_71"/>
+        <link:link rdf:resource="#item_73"/>
+        <link:link rdf:resource="#item_72"/>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>Mathematics - Probability</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Comparison of the performance of count data models under different zero-inflation scenarios using simulation studies</dc:title>
+        <dcterms:abstract>The Conway-Maxwell-Poisson (CMP) distribution is a natural two-parameter generalisation of the Poisson distribution which has received some attention in the statistics literature in recent years by offering flexible generalisations of some well-known models. In this work, we begin by establishing some properties of both the CMP distribution and an analogous generalisation of the binomial distribution, which we refer to as the CMB distribution. We also consider some convergence results and approximations, including a bound on the total variation distance between a CMB distribution and the corresponding CMP limit.</dcterms:abstract>
+        <dc:date>2016-07-08</dc:date>
+        <z:shortTitle>The Conway-Maxwell-Poisson distribution</z:shortTitle>
+        <z:libraryCatalog>arXiv.org</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1503.07012</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-29 19:36:38</dcterms:dateSubmitted>
+        <dc:description>arXiv:1503.07012 [math]</dc:description>
+        <dc:identifier>DOI 10.48550/arXiv.1503.07012</dc:identifier>
+        <prism:number>arXiv:1503.07012</prism:number>
+    </rdf:Description>
+    <bib:Memo rdf:about="#item_71">
+       <rdf:value>Comment: 26 pages</rdf:value>
+    </bib:Memo>
+    <z:Attachment rdf:about="#item_73">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/73/Daly and Gaunt - 2016 - The Conway-Maxwell-Poisson distribution distributional theory and approximation.pdf"/>
+        <dc:title>Preprint PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/pdf/1503.07012v2</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-29 19:36:48</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_72">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/72/1503.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://arxiv.org/abs/1503.07012</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-11-29 19:36:41</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1186/s40488-021-00121-4">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2195-5832"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Feng</foaf:surname>
+                        <foaf:givenName>Cindy Xin</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_78"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Hurdle model</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Model diagnosis</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Zero deflation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Zero inflation</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>A comparison of zero-inflated and hurdle models for modeling zero-inflated count data</dc:title>
+        <dcterms:abstract>Counts data with excessive zeros are frequently encountered in practice. For example, the number of health services visits often includes many zeros representing the patients with no utilization during a follow-up time. A common feature of this type of data is that the count measure tends to have excessive zero beyond a common count distribution can accommodate, such as Poisson or negative binomial. Zero-inflated or hurdle models are often used to fit such data. Despite the increasing popularity of ZI and hurdle models, there is still a lack of investigation of the fundamental differences between these two types of models. In this article, we reviewed the zero-inflated and hurdle models and highlighted their differences in terms of their data generating processes. We also conducted simulation studies to evaluate the performances of both types of models. The final choice of regression model should be made after a careful assessment of goodness of fit and should be tailored to a particular data in question.</dcterms:abstract>
+        <dc:date>2021-06-24</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Springer Link</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>https://doi.org/10.1186/s40488-021-00121-4</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:45:25</dcterms:dateSubmitted>
+        <bib:pages>8</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2195-5832">
+        <prism:volume>8</prism:volume>
+        <dc:title>Journal of Statistical Distributions and Applications</dc:title>
+        <dc:identifier>DOI 10.1186/s40488-021-00121-4</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>J Stat Distrib App</dcterms:alternative>
+        <dc:identifier>ISSN 2195-5832</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_78">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/78/Feng - 2021 - A comparison of zero-inflated and hurdle models for modeling zero-inflated count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://link.springer.com/content/pdf/10.1186%2Fs40488-021-00121-4.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:45:32</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://onlinelibrary.wiley.com/doi/abs/10.1038/psp.2014.27">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:2163-8306"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Plan</foaf:surname>
+                        <foaf:givenName>El</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_81"/>
+        <link:link rdf:resource="#item_80"/>
+        <dc:title>Modeling and Simulation of Count Data</dc:title>
+        <dcterms:abstract>Count data, or number of events per time interval, are discrete data arising from repeated time to event observations. Their mean count, or piecewise constant event rate, can be evaluated by discrete probability distributions from the Poisson model family. Clinical trial data characterization often involves population count analysis. This tutorial presents the basics and diagnostics of count modeling and simulation in the context of pharmacometrics. Consideration is given to overdispersion, underdispersion, autocorrelation, and inhomogeneity. CPT Pharmacometrics Syst. Pharmacol. (2014) 3, e129; doi:10.1038/psp.2014.27; published online 13 August 2014</dcterms:abstract>
+        <dc:date>2014</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Wiley Online Library</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1038/psp.2014.27</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:49:32</dcterms:dateSubmitted>
+        <dc:rights>© 2014 The Authors. CPT: Pharmacometrics &amp; Systems Pharmacology published by Wiley Periodicals, Inc.</dc:rights>
+        <dc:description>_eprint: https://ascpt.onlinelibrary.wiley.com/doi/pdf/10.1038/psp.2014.27</dc:description>
+        <bib:pages>129</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:2163-8306">
+        <prism:volume>3</prism:volume>
+        <dc:title>CPT: Pharmacometrics &amp; Systems Pharmacology</dc:title>
+        <dc:identifier>DOI 10.1038/psp.2014.27</dc:identifier>
+        <prism:number>8</prism:number>
+        <dc:identifier>ISSN 2163-8306</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_81">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/81/Plan - 2014 - Modeling and Simulation of Count Data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/pdfdirect/10.1038/psp.2014.27</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:49:44</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Attachment rdf:about="#item_80">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/80/psp.2014.html"/>
+        <dc:title>Snapshot</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://onlinelibrary.wiley.com/doi/abs/10.1038/psp.2014.27</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:49:43</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="#item_84">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <dc:title>MODSIM07 - Land, Water and Environmental Management: Integrated Systems for Sustainability, Proceedings</dc:title>
+                <dcterms:alternative>MODSIM07 - Land, Water and Environmental Management: Integrated Systems for Sustainability, Proceedings</dcterms:alternative>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Giles</foaf:surname>
+                        <foaf:givenName>David</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_85"/>
+        <dc:title>Modeling inflated count data</dc:title>
+        <dcterms:abstract>EXTENDED ABSTRACT This paper extends standard regression models for count data in two ways. The first involves allowing for excess numbers of counts (count inflation) simultaneously at several values other than the zero value. The second involves broadening the class of discrete distributions by considering the Hermite distribution (Kemp and Kemp, 1965). This distribution has not been used previously in the econometrics literature, and when it has been used elsewhere, no consideration has been given to introducing covariates into the model. Two particularly appealing features of the Hermite distribution are its abilities to model multi-modal count data without any modification, and to allow for over-dispersion in the sample. We pursue these extensions of the standard count data models both separately and jointly, and provide several empirical applications that illustrate some of their merits. Our results to date suggest that the Hermite distribution, parameterized to incorporate covariates, offers considerable potential in the modeling of discrete economic data.</dcterms:abstract>
+        <dc:date>2007-01-01</dc:date>
+        <z:libraryCatalog>ResearchGate</z:libraryCatalog>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_85">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/85/Giles - 2007 - Modeling inflated count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/profile/David-Giles-12/publication/228672087_Modeling_inflated_count_data/links/00b7d5252bf07ce7ec000000/Modeling-inflated-count-data.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:53:30</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1080/00949655.2023.2182883">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf>
+            <bib:Journal>
+                <prism:volume>93</prism:volume>
+                <dc:title>Journal of Statistical Computation and Simulation</dc:title>
+                <dc:identifier>DOI 10.1080/00949655.2023.2182883</dc:identifier>
+                <prism:number>14</prism:number>
+                <dc:identifier>ISSN 0094-9655</dc:identifier>
+            </bib:Journal>
+        </dcterms:isPartOf>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Sengupta</foaf:surname>
+                        <foaf:givenName>Debjit</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Roy</foaf:surname>
+                        <foaf:givenName>Surupa</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_87"/>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62F10</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62F40</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62P20</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>62P25</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+            <z:AutomaticTag>
+               <rdf:value>bootstrap method</rdf:value>
+            </z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>Excess zero</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>likelihood</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>surrogate</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:subject>
+           <z:AutomaticTag><rdf:value>undercount</rdf:value></z:AutomaticTag>
+        </dc:subject>
+        <dc:title>Modelling zero inflated and under-reported count data</dc:title>
+        <dcterms:abstract>Poisson distribution is a classic choice for modelling unbounded count data. However, count data arising in various fields of scientific research often have excess zeros and are under-reported. In such situations, Poisson distribution gives a poor fit and Poisson model based inferences lead to biased estimators and inaccurate confidence intervals. In this paper we develop a flexible model which can accommodate excess zeros and undercount. Internal validation data has been used for making likelihood based inferences. The impact of ignoring undercount and excess zeros are studied through extensive simulations. The finite sample behaviour of the estimators are investigated through bootstrap methodology. Finally, a real life data which is supposedly under-reported and known to have excess zeros is analysed.</dcterms:abstract>
+        <dc:date>2023-09-22</dc:date>
+        <z:libraryCatalog>Taylor and Francis+NEJM</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1080/00949655.2023.2182883</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:55:46</dcterms:dateSubmitted>
+        <dc:description>Publisher: Taylor &amp; Francis
+_eprint: https://doi.org/10.1080/00949655.2023.2182883</dc:description>
+        <bib:pages>2390-2409</bib:pages>
+    </bib:Article>
+    <z:Attachment rdf:about="#item_87">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/87/Sengupta and Roy - 2023 - Modelling zero inflated and under-reported count data.pdf"/>
+        <dc:title>Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.tandfonline.com/doi/pdf/10.1080/00949655.2023.2182883</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-02 14:55:53</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://linkinghub.elsevier.com/retrieve/pii/0304407686900023">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:03044076"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Mullahy</foaf:surname>
+                        <foaf:givenName>John</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_91"/>
+        <dc:title>Specification and testing of some modified count data models</dc:title>
+        <dc:date>12/1986</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://linkinghub.elsevier.com/retrieve/pii/0304407686900023</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-05 13:48:16</dcterms:dateSubmitted>
+        <bib:pages>341-365</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:03044076">
+        <prism:volume>33</prism:volume>
+        <dc:title>Journal of Econometrics</dc:title>
+        <dc:identifier>DOI 10.1016/0304-4076(86)90002-3</dc:identifier>
+        <prism:number>3</prism:number>
+        <dcterms:alternative>Journal of Econometrics</dcterms:alternative>
+        <dc:identifier>ISSN 03044076</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_91">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/91/Mullahy - 1986 - Specification and testing of some modified count data models.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://pdf.sciencedirectassets.com/271689/1-s2.0-S0304407600X01005/1-s2.0-0304407686900023/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIArdO%2FKDkjV558vpu3EhQ5ToCC6RS3oRNWPyHqcMWvYZAiEAiC4oHeNK%2BZqn4jHaYLAEDNrjnPzxuhxaOWzFoeEMUdAqsgUIXhAFGgwwNTkwMDM1NDY4NjUiDCgRGDMGqPHmW4mMsSqPBYVxf9R3UVKFcvL5ZoIPSgIQn%2BjPWhl0lsIQ82dwmnAf%2BI3xZdWav69Xf1tpKzNL8TI%2F0jd0lpIerNrJpzmcPVY0CizQ00RCGEydc2jfdknwDeQkj8FELKn9%2BmX4yOgXL%2FAlBc41iC%2FGckujoI8IF5Jj9a1kbqVrWIYr02O0QLd0mNrYHsNlE7awxx9wjaOxdKwLiOrusDx3xY1BsMScjsVWlBgkEqrQ60Pihiy0mtwCtEgZT3CZZr137gc3yld%2FAOXahl3%2BFYm6Ww%2FBTfYEOmRJQCWfh%2Bvve7xR%2FJLWihT%2F%2FAPlsxIRauNjVNZw2YKHH7u%2BXnATWOVrh1hcTKcpTVidxwDuuRt8FAnV9IqUFDXYFuUbhrmA3nyowa%2BUwYyPLvLIeGIaycBpcAXoUCCgrjpCbOUhoX9VQZWShfCLnESsl%2B3qPc%2BjriNs%2BxjMkd6Q6OYxprxlvr22BqVsUgAigfkxHQPgOdi7Tyc%2BJCKViQSXnoPlUIpa8SJBFRKCO%2FyLPsgpQgEo9iz3Z6MKfYcG4qAoT2nf%2FLfXR3VsavZJ%2F9k%2B6Rb7BYyC0W%2BSjfmBvQOoCORQwbKE59KBAKItCdvNCyzXgbof7k3HorxdAjwtsIq5TvFlfmOraBhcIGM4tCBuH3wYnieAmlWh%2FrKIvh1zGv4U1haa3X%2Bd8XunQCwWy9yRLP70%2FIVT7u3%2BtfVvuKWyJlp5u7uESLCdwP90lwSrZE7CkjIeEBt76Hex6pWfC1K7yDWQZ2XCLi6N%2FLZqYE4QhnH9888WP97qYD8yvruJ2TARnmUYnl%2FpvVT7asmgcJb3Psw83%2B3tU29VpCNVl1JjK7vgR4AfzNTEOKKvK2Ju5gTm%2Ft78MzrVRgRO7Kh6GUUw7LDLyQY6sQHzR5psqJlH0ANBExH5zWtn9t6SjJrVXvJ3RTartPZk9atcZP9599bvmu8mMcSsSnSc8kK9QxQi5Vn%2FPDOrdFQFhd7VcrRpJeenUXbCUZWaS0mjUNSAI2PUuOMKkVUN%2F2Y6%2FiyRvLC07p1yNPDtxhC7IoHi0EiGj3ax5qDSs7wt9rrymKLuQm0%2FcqMdhfkRSolthTp%2BNbA4TGesG2T%2B%2Fne9KWLvrSKVcCdTuJUN%2FbcbxUY%3D&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Date=20251205T134730Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=300&amp;X-Amz-Credential=ASIAQ3PHCVTYVHVEXOPM%2F20251205%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Signature=48285852dc783c832555625127f3eee5e6d66e243d1613e28522a543d9271ec4&amp;hash=0f6914d83a8a6254a31048a3f2bc2babeac039c0303ff7263004c8545cd4369e&amp;host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&amp;pii=0304407686900023&amp;tid=spdf-999a74fc-029a-4365-82a1-75d30ebba4a0&amp;sid=a774165d63b7a74eef4a685982fc80d8ae74gxrqb&amp;type=client&amp;tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&amp;ua=160d56035952060a065d59&amp;rr=9a93fee26bf7b303&amp;cc=lk</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-05 13:48:07</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Document rdf:about="https://www.researchgate.net/publication/254333007_Zero-Inflated_Poisson_Regression_With_An_Application_to_Defects_in_Manufacturing">
+        <z:itemType>webpage</z:itemType>
+        <dcterms:isPartOf>
+           <z:Website></z:Website>
+        </dcterms:isPartOf>
+        <link:link rdf:resource="#item_94"/>
+        <dc:title>(Lambert, 1992) introduces the Zero-Inflated Poisson (ZIP) - Google Search</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/publication/254333007_Zero-Inflated_Poisson_Regression_With_An_Application_to_Defects_in_Manufacturing</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-08 16:11:10</dcterms:dateSubmitted>
+    </bib:Document>
+    <z:Attachment rdf:about="#item_94">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/94/254333007_Zero-Inflated_Poisson_Regression_With_An_Application_to_Defects_in_Manufacturing.html"/>
+        <dc:title>(Lambert, 1992) introduces the Zero-Inflated Poisson (ZIP) - Google Search</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.researchgate.net/publication/254333007_Zero-Inflated_Poisson_Regression_With_An_Application_to_Defects_in_Manufacturing</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-08 16:11:24</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>text/html</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://www.jstor.org/stable/1269547?origin=crossref">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:00401706"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Lambert</foaf:surname>
+                        <foaf:givenName>Diane</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_97"/>
+        <dc:title>Zero-Inflated Poisson Regression, with an Application to Defects in Manufacturing</dc:title>
+        <dc:date>02/1992</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>DOI.org (Crossref)</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.jstor.org/stable/1269547?origin=crossref</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-09 16:11:47</dcterms:dateSubmitted>
+        <bib:pages>1</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:00401706">
+        <prism:volume>34</prism:volume>
+        <dc:title>Technometrics</dc:title>
+        <dc:identifier>DOI 10.2307/1269547</dc:identifier>
+        <prism:number>1</prism:number>
+        <dcterms:alternative>Technometrics</dcterms:alternative>
+        <dc:identifier>ISSN 00401706</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_97">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/97/Lambert - 1992 - Zero-Inflated Poisson Regression, with an Application to Defects in Manufacturing.pdf"/>
+        <dc:title>PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://www.stat.cmu.edu/technometrics/90-00/vol-34-01/v3401001.pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-09 16:11:42</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <bib:Article rdf:about="https://doi.org/10.1088/1757-899X/546/5/052025">
+        <z:itemType>journalArticle</z:itemType>
+        <dcterms:isPartOf rdf:resource="urn:issn:1757-899X"/>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Fitriani</foaf:surname>
+                        <foaf:givenName>Rahma</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Chrisdiana</foaf:surname>
+                        <foaf:givenName>Lidia Novita</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Efendi</foaf:surname>
+                        <foaf:givenName>Achmad</foaf:givenName>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_100"/>
+        <dc:title>Simulation on the Zero Inflated Negative Binomial (ZINB) to Model Overdispersed, Poisson Distributed Data</dc:title>
+        <dcterms:abstract>Poisson regression analysis shows the relationship between predictor variables and response variables that follow the Poisson distribution which has equal dispersion and average values (λ), a situation called equidispersion. However, the variance can also be greater than the average value, called overdispersion. This can be caused by excess opportunities for the emergence of zero values in the response variable or zero excess. The parameter of the overdispersed data analysis can be underestimated so that the results become biased. This bias issue can be, hopefully, overcome by the Zero Inflated Negative Binomial (ZINB) regression analysis. In the 2016 Maternal Mortality Rate data in Bojonegoro District, overdipersion was overcome by ZINB regression even though there was no significant predictor variable found affecting the response variable. ZINB regression analysis can also be applied to generated data (simulation). We had the data with average λ = (0.2, 0.4, 0.6, 0.8, 1.0, 5.0) proportion of zeros p = (0.4, 0.6, 0.8), and the number of observationsn = (200,500, 800), with each setting was repeated 100 times. From the simulation study it was found that all overdispersion events were always accompanied by zero excess events but not vice versa. The greater the value of λ then the greater the dispersion coefficient. The ZINB regression is proven to be able to overcome overdispersion in various conditions of different values of λ, p, n which can be seen from the value τ (dispersion coefficient) after ZINB regression is less than 1 in all conditions.</dcterms:abstract>
+        <dc:date>2019-06</dc:date>
+        <z:language>en</z:language>
+        <z:libraryCatalog>Institute of Physics</z:libraryCatalog>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://doi.org/10.1088/1757-899X/546/5/052025</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-13 12:42:11</dcterms:dateSubmitted>
+        <dc:description>Publisher: IOP Publishing</dc:description>
+        <bib:pages>052025</bib:pages>
+    </bib:Article>
+    <bib:Journal rdf:about="urn:issn:1757-899X">
+        <prism:volume>546</prism:volume>
+        <dc:title>IOP Conference Series: Materials Science and Engineering</dc:title>
+        <dc:identifier>DOI 10.1088/1757-899X/546/5/052025</dc:identifier>
+        <prism:number>5</prism:number>
+        <dcterms:alternative>IOP Conf. Ser.: Mater. Sci. Eng.</dcterms:alternative>
+        <dc:identifier>ISSN 1757-899X</dc:identifier>
+    </bib:Journal>
+    <z:Attachment rdf:about="#item_100">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="files/100/Fitriani et al. - 2019 - Simulation on the Zero Inflated Negative Binomial (ZINB) to Model Overdispersed, Poisson Distributed.pdf"/>
+        <dc:title>IOP Full Text PDF</dc:title>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://iopscience.iop.org/article/10.1088/1757-899X/546/5/052025/pdf</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2025-12-13 12:42:18</dcterms:dateSubmitted>
+        <z:linkMode>1</z:linkMode>
+        <link:type>application/pdf</link:type>
+    </z:Attachment>
+    <z:Collection rdf:about="#collection_3">
+        <dc:title>Base</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.tandfonline.com/doi/abs/10.1080/00401706.1992.10485228"/>
+        <dcterms:hasPart rdf:resource="#item_53"/>
+        <dcterms:hasPart rdf:resource="https://www.sciencedirect.com/science/article/pii/S0167715225001245"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_1">
+        <dc:title>Count Data Research</dc:title>
+        <dcterms:hasPart rdf:resource="#collection_6"/>
+        <dcterms:hasPart rdf:resource="#collection_5"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2079-3197/9/9/94"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/03610918.2024.2331624"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1007/s00500-024-09889-4"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2021.1872077"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/02664763.2020.1757049"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/03610926.2021.1898642"/>
+        <dcterms:hasPart rdf:resource="https://www.researchgate.net/publication/390943588_Advances_and_Applications_in_Statistics_ON_THE_ZERO_AND_k-INFLATED_NEGATIVE_BINOMIAL_DISTRIBUTION_WITH_APPLICATIONS"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2813-2203/2/1/14"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/2010.16040"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2021.1970162"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2076-3417/14/23/10790"/>
+        <dcterms:hasPart rdf:resource="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012599"/>
+        <dcterms:hasPart rdf:resource="https://www.cambridge.org/core/journals/annals-of-actuarial-science/article/interpretable-zeroinflated-neural-network-models-for-predicting-admission-counts/A2F658C3E55A0380748530D5FA830379"/>
+        <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7189957/"/>
+        <dcterms:hasPart rdf:resource="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11687910/"/>
+        <dcterms:hasPart rdf:resource="#item_37"/>
+        <dcterms:hasPart rdf:resource="urn:isbn:978-989-758-521-0"/>
+        <dcterms:hasPart rdf:resource="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0306186"/>
+        <dcterms:hasPart rdf:resource="https://www.jstor.org/stable/2532086"/>
+        <dcterms:hasPart rdf:resource="#item_57"/>
+        <dcterms:hasPart rdf:resource="https://pmc.ncbi.nlm.nih.gov/articles/PMC8022945/"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1007/s40745-023-00464-6"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2019.1636991"/>
+        <dcterms:hasPart rdf:resource="#item_65"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/03610918.2018.1498886"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1186/s40488-021-00121-4"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1038/psp.2014.27"/>
+        <dcterms:hasPart rdf:resource="#item_84"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2023.2182883"/>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/0304407686900023"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_6">
+        <dc:title>ML count data</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2076-3417/14/23/10790"/>
+        <dcterms:hasPart rdf:resource="https://pmc.ncbi.nlm.nih.gov/articles/PMC8022945/"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1007/s40745-023-00464-6"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_5">
+        <dc:title>Models(basic)</dc:title>
+        <dcterms:hasPart rdf:resource="https://linkinghub.elsevier.com/retrieve/pii/0304407686900023"/>
+        <dcterms:hasPart rdf:resource="https://www.jstor.org/stable/1269547?origin=crossref"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1088/1757-899X/546/5/052025"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_2">
+        <dc:title>main papers</dc:title>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2079-3197/9/9/94"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/03610918.2024.2331624"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1007/s00500-024-09889-4"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2021.1872077"/>
+        <dcterms:hasPart rdf:resource="https://www.mdpi.com/2813-2203/2/1/14"/>
+        <dcterms:hasPart rdf:resource="#item_57"/>
+        <dcterms:hasPart rdf:resource="http://arxiv.org/abs/1503.07012"/>
+    </z:Collection>
+    <z:Collection rdf:about="#collection_4">
+        <dc:title>Simulations</dc:title>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/03610918.2018.1498886"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1186/s40488-021-00121-4"/>
+        <dcterms:hasPart rdf:resource="https://onlinelibrary.wiley.com/doi/abs/10.1038/psp.2014.27"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1080/00949655.2023.2182883"/>
+        <dcterms:hasPart rdf:resource="https://doi.org/10.1088/1757-899X/546/5/052025"/>
+    </z:Collection>
+</rdf:RDF>

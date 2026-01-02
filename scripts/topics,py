@@ -1,0 +1,54 @@
+import requests
+import json
+
+def autocomplete_topics(keyword):
+    url = "https://trends.google.com/trends/api/autocomplete"
+    params = {"hl": "en-US", "tz": 360, "term": keyword}
+    
+    # Add headers to mimic a browser request
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+    }
+    
+    try:
+        r = requests.get(url, params=params, headers=headers, verify=False)
+        
+        # Google Trends API returns JSON with a prefix that needs to be removed
+        # The response typically starts with ")]}',"
+        if r.status_code == 200:
+            # Remove the security prefix
+            content = r.text
+            if content.startswith(")]}',"):
+                content = content[5:]  # Remove the first 5 characters
+            
+            # Parse the JSON
+            data = json.loads(content)
+            
+            # Extract the relevant data (usually at index 1 of the array)
+            if isinstance(data, list) and len(data) > 1:
+                suggestions = data[1]
+                topics = [
+                    {
+                        "title": x.get("title", ""),
+                        "type": x.get("type", ""),
+                        "mid": x.get("mid", "")
+                    }
+                    for x in suggestions
+                    if x.get("mid")
+                ]
+                return topics
+            else:
+                return []
+        else:
+            print(f"Error: Received status code {r.status_code}")
+            return []
+            
+    except Exception as e:
+        print(f"Error: {e}")
+        return []
+
+# Test the function
+if __name__ == "__main__":
+    topics = autocomplete_topics("inflation")
+    for topic in topics:
+        print(topic)

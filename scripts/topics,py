@@ -50,5 +50,6 @@ def autocomplete_topics(keyword):
 # Test the function
 if __name__ == "__main__":
     topics = autocomplete_topics("inflation")
+    print(topics)
     for topic in topics:
         print(topic)

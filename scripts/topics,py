@@ -1,5 +1,9 @@
 import requests
 import json
+import warnings
+
+# Suppress SSL warnings
+warnings.filterwarnings('ignore', message='Unverified HTTPS request')
 
 def autocomplete_topics(keyword):
     url = "https://trends.google.com/trends/api/autocomplete"
@@ -7,24 +11,50 @@ def autocomplete_topics(keyword):
     
     # Add headers to mimic a browser request
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://trends.google.com/trends/explore"
     }
     
     try:
-        r = requests.get(url, params=params, headers=headers, verify=False)
+        # Try with verify=True first, fall back to verify=False if needed
+        try:
+            r = requests.get(url, params=params, headers=headers, timeout=10, verify=True)
+        except requests.exceptions.SSLError:
+            r = requests.get(url, params=params, headers=headers, timeout=10, verify=False)
         
-        # Google Trends API returns JSON with a prefix that needs to be removed
-        # The response typically starts with ")]}',"
-        if r.status_code == 200:
-            # Remove the security prefix
-            content = r.text
-            if content.startswith(")]}',"):
-                content = content[5:]  # Remove the first 5 characters
+        print(f"Status Code: {r.status_code}")
+        print(f"Response length: {len(r.text)}")
+        
+        if r.status_code != 200:
+            print(f"Error: Received status code {r.status_code}")
+            print(f"Response: {r.text[:200]}")  # Print first 200 chars
+            return []
             
+        # Google Trends API returns JSON with a prefix that needs to be removed
+        content = r.text
+        
+        # Debug: Save raw response
+        with open('debug_response.txt', 'w') as f:
+            f.write(content[:500])
+        
+        # Remove security prefix if present
+        if content.startswith(")]}',"):
+            content = content[5:]  # Remove the first 5 characters
+        elif content.startswith(")]}'\n"):
+            content = content[5:]  # Alternative prefix
+        
+        try:
             # Parse the JSON
             data = json.loads(content)
             
-            # Extract the relevant data (usually at index 1 of the array)
+            # Debug: Print data structure
+            print(f"Data type: {type(data)}")
+            if isinstance(data, list):
+                print(f"Data length: {len(data)}")
+            
+            # Extract the relevant data
             if isinstance(data, list) and len(data) > 1:
                 suggestions = data[1]
                 topics = [
@@ -37,19 +67,38 @@ def autocomplete_topics(keyword):
                     if x.get("mid")
                 ]
                 return topics
+            elif isinstance(data, dict):
+                # Try alternative structure
+                if 'default' in data and 'topics' in data['default']:
+                    topics = [
+                        {
+                            "title": x.get("title", ""),
+                            "type": x.get("type", ""),
+                            "mid": x.get("mid", "")
+                        }
+                        for x in data['default']['topics']
+                        if x.get("mid")
+                    ]
+                    return topics
             else:
+                print(f"Unexpected data structure: {type(data)}")
                 return []
-        else:
-            print(f"Error: Received status code {r.status_code}")
+                
+        except json.JSONDecodeError as e:
+            print(f"JSON Decode Error: {e}")
+            print(f"Content preview: {content[:200]}")
             return []
             
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error: {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
         return []
 
 # Test the function
 if __name__ == "__main__":
+    print("Starting autocomplete test...")
     topics = autocomplete_topics("inflation")
-    print(topics)
-    for topic in topics:
+    print(f"Found {len(topics)} topics")
+    for topic in topics[:5]:  # Print only first 5
         print(topic)

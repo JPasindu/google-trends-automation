@@ -1,4 +1,4 @@
-name: Fetch Google Trends Data
+name: Topics
 
 on:
   schedule:

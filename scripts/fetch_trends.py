@@ -13,10 +13,10 @@ DELAY_MIN = 3
 DELAY_MAX = 6
 MAX_RETRIES = 3
 TERMS_QUEUE_FILE = 'data/terms_queue.txt'
-COUNTRIES_FILE = 'data/countries.txt'
-PROGRESS_FILE = 'progress_state.txt'
+PROCESSED_FILE = 'processed_terms.txt'
 DATA_DIR = Path('data/trends_results')
 LOG_DIR = Path('logs')
+MASTER_FILE = DATA_DIR / 'google_trends_master.csv'
 
 # Setup directories
 DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -35,84 +35,11 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-def load_countries():
-    """Load country codes from file."""
-    if not Path(COUNTRIES_FILE).exists():
-        logger.error(f"Countries file not found: {COUNTRIES_FILE}")
-        logger.info("Creating sample countries.txt file with format: COUNTRY_CODE|Country Name")
-        # Create sample file
-        with open(COUNTRIES_FILE, 'w', encoding='utf-8') as f:
-            f.write("LK|Sri Lanka\n")
-            f.write("US|United States\n")
-            f.write("IN|India\n")
-        return []
-    
-    countries = []
-    with open(COUNTRIES_FILE, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line and not line.startswith('#'):
-                parts = line.split('|')
-                if len(parts) >= 2:
-                    countries.append({'code': parts[0].strip(), 'name': parts[1].strip()})
-                else:
-                    countries.append({'code': parts[0].strip(), 'name': parts[0].strip()})
-    
-    logger.info(f"Loaded {len(countries)} countries")
-    return countries
-
-
-def load_terms_queue():
-    """Load terms from queue file."""
-    if not Path(TERMS_QUEUE_FILE).exists():
-        logger.error(f"Terms queue file not found: {TERMS_QUEUE_FILE}")
-        return []
-    
-    with open(TERMS_QUEUE_FILE, 'r', encoding='utf-8') as f:
-        terms = [line.strip() for line in f if line.strip()]
-    
-    logger.info(f"Loaded {len(terms)} terms from queue")
-    return terms
-
-
-def load_progress():
-    """Load progress state from file."""
-    if not Path(PROGRESS_FILE).exists():
-        return {}
-    
-    progress = {}
-    with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                parts = line.split('|')
-                if len(parts) == 2:
-                    country_code, term = parts
-                    if country_code not in progress:
-                        progress[country_code] = set()
-                    progress[country_code].add(term)
-    
-    return progress
-
-
-def save_progress(country_code, term):
-    """Append processed term for a country to progress file."""
-    with open(PROGRESS_FILE, 'a', encoding='utf-8') as f:
-        f.write(f"{country_code}|{term}\n")
-
-
-def get_master_file_path(country_code):
-    """Get the master file path for a specific country."""
-    return DATA_DIR / f'google_trends_master_{country_code}.csv'
-
-
-def load_or_create_master_df(country_code):
-    """Load existing master file or create new one for a country."""
-    master_file = get_master_file_path(country_code)
-    
-    if master_file.exists():
-        df = pd.read_csv(master_file, parse_dates=['date'])
-        logger.info(f"Loaded master file for {country_code} with {len(df)} rows and {len(df.columns)-1} terms")
+def load_or_create_master_df():
+    """Load existing master file or create new one."""
+    if MASTER_FILE.exists():
+        df = pd.read_csv(MASTER_FILE, parse_dates=['date'])
+        logger.info(f"Loaded master file with {len(df)} rows and {len(df.columns)-1} terms")
         return df
     else:
         # Create empty dataframe with date column
@@ -120,22 +47,21 @@ def load_or_create_master_df(country_code):
         return empty_df
 
 
-def save_master_df(df, country_code):
-    """Save master dataframe to CSV for a specific country."""
-    master_file = get_master_file_path(country_code)
-    df.to_csv(master_file, index=False)
-    logger.info(f"Saved master file for {country_code} with {len(df)} rows and {len(df.columns)-1} terms")
+def save_master_df(df):
+    """Save master dataframe to CSV."""
+    df.to_csv(MASTER_FILE, index=False)
+    logger.info(f"Saved master file with {len(df)} rows and {len(df.columns)-1} terms")
 
 
-def fetch_trend_data(pytrends, term, country_code, retries=0):
-    """Fetch Google Trends data for a single term and country."""
+def fetch_trend_data(pytrends, term, retries=0):
+    """Fetch Google Trends data for a single term."""
     try:
-        # Build payload - Data from 2012
+        # Build payload - Data from 2012, Sri Lanka
         pytrends.build_payload(
             [term],
             cat=0,
             timeframe='2012-01-01 2025-10-31',
-            geo=country_code,
+            geo='LK',
             gprop=''
         )
         
@@ -143,7 +69,7 @@ def fetch_trend_data(pytrends, term, country_code, retries=0):
         interest_df = pytrends.interest_over_time()
         
         if interest_df.empty:
-            logger.warning(f"No data returned for term: {term} in {country_code}")
+            logger.warning(f"No data returned for term: {term}")
             return None
         
         # Remove the 'isPartial' column if it exists
@@ -159,7 +85,7 @@ def fetch_trend_data(pytrends, term, country_code, retries=0):
         # Keep only date and the term column
         interest_df = interest_df[['date', term]]
         
-        logger.info(f"✓ Successfully fetched data for: {term} ({country_code})")
+        logger.info(f"✓ Successfully fetched data for: {term}")
         return interest_df
     
     except Exception as e:
@@ -167,26 +93,26 @@ def fetch_trend_data(pytrends, term, country_code, retries=0):
         
         # Check for rate limit error
         if '429' in error_msg or 'Too Many Requests' in error_msg:
-            logger.warning(f"⚠️ Rate limit hit (429) on term: {term} ({country_code}) - will continue on next run")
+            logger.warning(f"⚠️ Rate limit hit (429) on term: {term} - will continue on next run")
             raise Exception("RATE_LIMIT")
         
         # Check for timeout errors
         if 'ReadTimeout' in error_msg or 'ConnectTimeout' in error_msg or 'timeout' in error_msg.lower():
-            logger.warning(f"⏱️ Timeout on {term} ({country_code}), retry {retries+1}/{MAX_RETRIES}")
+            logger.warning(f"⏱️  Timeout on {term}, retry {retries+1}/{MAX_RETRIES}")
             if retries < MAX_RETRIES:
                 time.sleep(random.uniform(10, 15))
-                return fetch_trend_data(pytrends, term, country_code, retries + 1)
+                return fetch_trend_data(pytrends, term, retries + 1)
             else:
-                logger.error(f"✗ Failed {term} ({country_code}) after {MAX_RETRIES} timeout retries")
+                logger.error(f"✗ Failed {term} after {MAX_RETRIES} timeout retries")
                 return None
         
         # Retry on other errors
         if retries < MAX_RETRIES:
-            logger.warning(f"Error fetching {term} ({country_code}), retry {retries+1}/{MAX_RETRIES}: {error_msg}")
+            logger.warning(f"Error fetching {term}, retry {retries+1}/{MAX_RETRIES}: {error_msg}")
             time.sleep(random.uniform(5, 10))
-            return fetch_trend_data(pytrends, term, country_code, retries + 1)
+            return fetch_trend_data(pytrends, term, retries + 1)
         
-        logger.error(f"✗ Failed to fetch {term} ({country_code}) after {MAX_RETRIES} retries: {error_msg}")
+        logger.error(f"✗ Failed to fetch {term} after {MAX_RETRIES} retries: {error_msg}")
         return None
 
 
@@ -213,59 +139,99 @@ def update_master_with_new_terms(master_df, new_data_list):
     return result_df
 
 
-def process_country_batch(country, all_terms, progress, pytrends):
-    """Process a batch of terms for a specific country."""
-    country_code = country['code']
-    country_name = country['name']
+def load_terms_queue():
+    """Load terms from queue file."""
+    if not Path(TERMS_QUEUE_FILE).exists():
+        logger.error(f"Terms queue file not found: {TERMS_QUEUE_FILE}")
+        return []
     
+    with open(TERMS_QUEUE_FILE, 'r', encoding='utf-8') as f:
+        terms = [line.strip() for line in f if line.strip()]
+    
+    logger.info(f"Loaded {len(terms)} terms from queue")
+    return terms
+
+
+def load_processed_terms():
+    """Load already processed terms."""
+    if not Path(PROCESSED_FILE).exists():
+        return set()
+    
+    with open(PROCESSED_FILE, 'r', encoding='utf-8') as f:
+        processed = {line.strip() for line in f if line.strip()}
+    
+    logger.info(f"Found {len(processed)} already processed terms")
+    return processed
+
+
+def save_processed_term(term):
+    """Append term to processed list."""
+    with open(PROCESSED_FILE, 'a', encoding='utf-8') as f:
+        f.write(f"{term}\n")
+
+
+def update_queue(remaining_terms):
+    """Update queue file with remaining terms."""
+    with open(TERMS_QUEUE_FILE, 'w', encoding='utf-8') as f:
+        for term in remaining_terms:
+            f.write(f"{term}\n")
+    logger.info(f"Updated queue with {len(remaining_terms)} remaining terms")
+
+
+def main():
     logger.info("=" * 60)
-    logger.info(f"Processing country: {country_name} ({country_code})")
+    logger.info("Starting Google Trends fetch job - MASTER FILE MODE")
+    logger.info(f"Batch size: {BATCH_SIZE}")
     logger.info("=" * 60)
     
-    # Load master dataframe for this country
-    master_df = load_or_create_master_df(country_code)
+    # Load master dataframe
+    master_df = load_or_create_master_df()
     
-    # Get already processed terms for this country
-    processed_terms = progress.get(country_code, set())
+    # Load terms
+    all_terms = load_terms_queue()
+    processed_terms = load_processed_terms()
     
-    # Get existing columns in master file
+    # Filter out already processed terms
+    pending_terms = [t for t in all_terms if t not in processed_terms]
+    
+    if not pending_terms:
+        logger.info("✅ No pending terms to process. Queue is empty or all terms processed.")
+        return
+    
+    # Check which pending terms are already in master (in case of partial processing)
     existing_columns = set(master_df.columns) if not master_df.empty else set()
-    
-    # Find truly new terms (not in progress and not in master)
-    truly_new_terms = [t for t in all_terms if t not in processed_terms and t not in existing_columns]
+    truly_new_terms = [t for t in pending_terms if t not in existing_columns]
     
     if not truly_new_terms:
-        logger.info(f"✅ All terms already processed for {country_name}")
-        return 0, 0, False
+        logger.info("✅ All pending terms already exist in master file.")
+        return
     
-    # Select batch
+    # Select batch from truly new terms
     batch = truly_new_terms[:BATCH_SIZE]
-    logger.info(f"Processing batch of {len(batch)} terms for {country_name}")
-    logger.info(f"Remaining terms after this batch: {len(truly_new_terms) - len(batch)}")
+    logger.info(f"Processing batch of {len(batch)} new terms")
+    
+    # Initialize pytrends with longer timeout
+    pytrends = TrendReq(hl='en-US', tz=360, timeout=(30, 60), retries=3, backoff_factor=1.0)
     
     # Process terms
     new_data_list = []
-    successful_count = 0
-    failed_count = 0
+    successful_terms = []
+    failed_terms = []
     rate_limit_hit = False
     
     for idx, term in enumerate(batch, 1):
-        logger.info(f"[{idx}/{len(batch)}] {country_name} - Processing: {term}")
+        logger.info(f"[{idx}/{len(batch)}] Processing: {term}")
         
         try:
             # Fetch data
-            df = fetch_trend_data(pytrends, term, country_code)
+            df = fetch_trend_data(pytrends, term)
             
             if df is not None:
                 new_data_list.append(df)
-                successful_count += 1
-                save_progress(country_code, term)
-                # Update progress in memory
-                if country_code not in progress:
-                    progress[country_code] = set()
-                progress[country_code].add(term)
+                successful_terms.append(term)
+                save_processed_term(term)
             else:
-                failed_count += 1
+                failed_terms.append(term)
             
             # Random delay between requests
             if idx < len(batch):
@@ -275,101 +241,48 @@ def process_country_batch(country, all_terms, progress, pytrends):
         
         except Exception as e:
             if "RATE_LIMIT" in str(e):
-                logger.warning(f"⚠️ Rate limit encountered for {country_name}. Stopping this run gracefully.")
+                logger.warning("⚠️ Rate limit encountered. Stopping this run gracefully.")
                 rate_limit_hit = True
                 break
             else:
-                logger.error(f"Unexpected error processing {term} for {country_name}: {e}")
-                failed_count += 1
+                logger.error(f"Unexpected error processing {term}: {e}")
+                failed_terms.append(term)
     
-    # Update master dataframe if we have new data
+    # Update master dataframe
     if new_data_list:
         updated_master = update_master_with_new_terms(master_df, new_data_list)
-        save_master_df(updated_master, country_code)
-        logger.info(f"💾 Updated master file for {country_name} with {len(new_data_list)} new terms")
+        save_master_df(updated_master)
+        logger.info(f"💾 Updated master file with {len(new_data_list)} new terms")
         
-        # Create backup with timestamp
+        # Also save a backup with timestamp
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_file = DATA_DIR / f'trends_backup_{country_code}_{timestamp}.csv'
+        backup_file = DATA_DIR / f'trends_backup_{timestamp}.csv'
         updated_master.to_csv(backup_file, index=False)
         logger.info(f"💾 Created backup: {backup_file}")
+        
+        total_terms = len(updated_master.columns) - 1
     else:
-        logger.info(f"No new data to add for {country_name}")
+        updated_master = master_df
+        total_terms = len(master_df.columns) - 1 if not master_df.empty else 0
+        logger.info("No new data to add to master file")
     
-    return successful_count, failed_count, rate_limit_hit
-
-
-def main():
+    # Update queue
+    remaining_terms = [t for t in pending_terms if t not in successful_terms]
+    update_queue(remaining_terms)
+    
+    # Summary
     logger.info("=" * 60)
-    logger.info("Starting Multi-Country Google Trends Fetch Job")
-    logger.info(f"Batch size per country: {BATCH_SIZE}")
-    logger.info("=" * 60)
-    
-    # Load configuration
-    countries = load_countries()
-    all_terms = load_terms_queue()
-    progress = load_progress()
-    
-    if not countries:
-        logger.error("No countries loaded. Please check countries.txt file.")
-        return
-    
-    if not all_terms:
-        logger.error("No terms loaded. Please check terms_queue.txt file.")
-        return
-    
-    # Initialize pytrends
-    pytrends = TrendReq(hl='en-US', tz=360, timeout=(30, 60), retries=3, backoff_factor=1.0)
-    
-    # Track overall statistics
-    total_successful = 0
-    total_failed = 0
-    rate_limit_hit = False
-    
-    # Process each country
-    for country in countries:
-        successful, failed, hit_limit = process_country_batch(country, all_terms, progress, pytrends)
-        total_successful += successful
-        total_failed += failed
-        
-        if hit_limit:
-            rate_limit_hit = True
-            logger.warning(f"⚠️ Stopping due to rate limit hit on {country['name']}")
-            break
-        
-        # Add delay between countries to avoid rate limits
-        if country != countries[-1]:
-            delay = random.uniform(DELAY_MIN * 2, DELAY_MAX * 2)
-            logger.info(f"Waiting {delay:.1f}s before next country...")
-            time.sleep(delay)
-    
-    # Final summary
-    logger.info("=" * 60)
-    logger.info("Overall Job Summary")
-    logger.info(f"✓ Total successful: {total_successful}")
-    logger.info(f"✗ Total failed: {total_failed}")
-    logger.info(f"📊 Countries processed: {len(countries)}")
-    logger.info(f"📊 Total terms: {len(all_terms)}")
-    
-    # Progress summary for each country
-    for country in countries:
-        country_code = country['code']
-        processed = len(progress.get(country_code, set()))
-        remaining = len(all_terms) - processed
-        logger.info(f"  {country['name']} ({country_code}): {processed}/{len(all_terms)} complete, {remaining} remaining")
-    
+    logger.info("Job Summary")
+    logger.info(f"✓ Successful: {len(successful_terms)}")
+    logger.info(f"✗ Failed: {len(failed_terms)}")
+    logger.info(f"📊 Total terms in master: {total_terms}")
+    logger.info(f"📊 Remaining in queue: {len(remaining_terms)}")
     if rate_limit_hit:
-        logger.warning("⚠️ Rate limit hit - will resume on next scheduled run")
-    else:
-        # Check if all countries are complete
-        all_complete = all(
-            len(progress.get(c['code'], set())) >= len(all_terms)
-            for c in countries
-        )
-        if all_complete:
-            logger.info("🎉 All terms downloaded for all countries!")
-    
+        logger.warning("⚠️  Rate limit hit - will resume on next scheduled run (4 hours)")
     logger.info("=" * 60)
+    
+    # Exit successfully even if rate limit hit (no exit code 1)
+    # The workflow will continue and send email summary
 
 
 if __name__ == '__main__':

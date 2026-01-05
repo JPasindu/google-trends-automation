@@ -1,0 +1,135 @@
+2026-01-05 20:24:21,409 - INFO - ============================================================
+2026-01-05 20:24:21,409 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-05 20:24:21,409 - INFO - Batch size: 75
+2026-01-05 20:24:21,409 - INFO - ============================================================
+2026-01-05 20:24:21,416 - INFO - Loaded master file with 166 rows and 127 terms
+2026-01-05 20:24:21,416 - INFO - Loaded 39 terms from queue
+2026-01-05 20:24:21,416 - INFO - Found 125 already processed terms
+2026-01-05 20:24:21,416 - INFO - Processing batch of 39 new terms
+2026-01-05 20:24:21,653 - INFO - [1/39] Processing: /g/120t97td
+2026-01-05 20:24:22,210 - INFO - ✓ Successfully fetched data for: /g/120t97td
+2026-01-05 20:24:22,210 - INFO - Waiting 5.9s before next request...
+2026-01-05 20:24:28,122 - INFO - [2/39] Processing: /g/11c6t_253c
+2026-01-05 20:24:28,480 - WARNING - No data returned for term: /g/11c6t_253c
+2026-01-05 20:24:28,480 - INFO - Waiting 4.7s before next request...
+2026-01-05 20:24:33,224 - INFO - [3/39] Processing: /g/11g_xxld32
+2026-01-05 20:24:33,583 - INFO - ✓ Successfully fetched data for: /g/11g_xxld32
+2026-01-05 20:24:33,583 - INFO - Waiting 4.5s before next request...
+2026-01-05 20:24:38,124 - INFO - [4/39] Processing: /g/121hdyly
+2026-01-05 20:24:38,484 - INFO - ✓ Successfully fetched data for: /g/121hdyly
+2026-01-05 20:24:38,485 - INFO - Waiting 3.8s before next request...
+2026-01-05 20:24:42,253 - INFO - [5/39] Processing: /g/11g0kd3ygw
+2026-01-05 20:24:42,634 - WARNING - No data returned for term: /g/11g0kd3ygw
+2026-01-05 20:24:42,634 - INFO - Waiting 5.9s before next request...
+2026-01-05 20:24:48,520 - INFO - [6/39] Processing: /g/11fsrbpz7j
+2026-01-05 20:24:48,899 - WARNING - No data returned for term: /g/11fsrbpz7j
+2026-01-05 20:24:48,900 - INFO - Waiting 6.0s before next request...
+2026-01-05 20:24:54,873 - INFO - [7/39] Processing: /m/0462swg
+2026-01-05 20:24:55,197 - WARNING - No data returned for term: /m/0462swg
+2026-01-05 20:24:55,198 - INFO - Waiting 5.9s before next request...
+2026-01-05 20:25:01,124 - INFO - [8/39] Processing: /m/02887sv
+2026-01-05 20:25:01,486 - INFO - ✓ Successfully fetched data for: /m/02887sv
+2026-01-05 20:25:01,486 - INFO - Waiting 4.4s before next request...
+2026-01-05 20:25:05,937 - INFO - [9/39] Processing: /g/12twkjsql
+2026-01-05 20:25:06,456 - WARNING - No data returned for term: /g/12twkjsql
+2026-01-05 20:25:06,457 - INFO - Waiting 5.4s before next request...
+2026-01-05 20:25:11,835 - INFO - [10/39] Processing: /g/11kbll0jmc
+2026-01-05 20:25:12,320 - INFO - ✓ Successfully fetched data for: /g/11kbll0jmc
+2026-01-05 20:25:12,320 - INFO - Waiting 4.0s before next request...
+2026-01-05 20:25:16,360 - INFO - [11/39] Processing: /g/11j317hdsz
+2026-01-05 20:25:16,885 - WARNING - No data returned for term: /g/11j317hdsz
+2026-01-05 20:25:16,885 - INFO - Waiting 3.3s before next request...
+2026-01-05 20:25:20,227 - INFO - [12/39] Processing: /g/11hdw7wpyv
+2026-01-05 20:25:20,804 - INFO - ✓ Successfully fetched data for: /g/11hdw7wpyv
+2026-01-05 20:25:20,805 - INFO - Waiting 4.8s before next request...
+2026-01-05 20:25:25,569 - INFO - [13/39] Processing: /g/11c6t_549p
+2026-01-05 20:25:26,039 - WARNING - No data returned for term: /g/11c6t_549p
+2026-01-05 20:25:26,039 - INFO - Waiting 5.4s before next request...
+2026-01-05 20:25:31,422 - INFO - [14/39] Processing: /g/11j317sfyk
+2026-01-05 20:25:31,892 - INFO - ✓ Successfully fetched data for: /g/11j317sfyk
+2026-01-05 20:25:31,892 - INFO - Waiting 5.6s before next request...
+2026-01-05 20:25:37,515 - INFO - [15/39] Processing: /g/11fsrbrqgk
+2026-01-05 20:25:37,986 - INFO - ✓ Successfully fetched data for: /g/11fsrbrqgk
+2026-01-05 20:25:37,987 - INFO - Waiting 3.3s before next request...
+2026-01-05 20:25:41,246 - INFO - [16/39] Processing: /g/11h4f8vzqz
+2026-01-05 20:25:41,710 - WARNING - No data returned for term: /g/11h4f8vzqz
+2026-01-05 20:25:41,710 - INFO - Waiting 3.3s before next request...
+2026-01-05 20:25:45,010 - INFO - [17/39] Processing: /m/05y7_j
+2026-01-05 20:25:45,417 - INFO - ✓ Successfully fetched data for: /m/05y7_j
+2026-01-05 20:25:45,417 - INFO - Waiting 4.2s before next request...
+2026-01-05 20:25:49,635 - INFO - [18/39] Processing: /m/01wq4b
+2026-01-05 20:25:49,991 - INFO - ✓ Successfully fetched data for: /m/01wq4b
+2026-01-05 20:25:49,991 - INFO - Waiting 4.9s before next request...
+2026-01-05 20:25:54,910 - INFO - [19/39] Processing: /m/04qsq
+2026-01-05 20:25:55,271 - INFO - ✓ Successfully fetched data for: /m/04qsq
+2026-01-05 20:25:55,272 - INFO - Waiting 5.9s before next request...
+2026-01-05 20:26:01,153 - INFO - [20/39] Processing: /m/0_gyn88
+2026-01-05 20:26:01,623 - INFO - ✓ Successfully fetched data for: /m/0_gyn88
+2026-01-05 20:26:01,623 - INFO - Waiting 5.4s before next request...
+2026-01-05 20:26:07,005 - INFO - [21/39] Processing: /m/04rsd
+2026-01-05 20:26:07,470 - INFO - ✓ Successfully fetched data for: /m/04rsd
+2026-01-05 20:26:07,471 - INFO - Waiting 4.7s before next request...
+2026-01-05 20:26:12,140 - INFO - [22/39] Processing: /m/047m52
+2026-01-05 20:26:12,577 - INFO - ✓ Successfully fetched data for: /m/047m52
+2026-01-05 20:26:12,577 - INFO - Waiting 6.0s before next request...
+2026-01-05 20:26:18,568 - INFO - [23/39] Processing: /m/05xxpj
+2026-01-05 20:26:19,127 - INFO - ✓ Successfully fetched data for: /m/05xxpj
+2026-01-05 20:26:19,127 - INFO - Waiting 3.6s before next request...
+2026-01-05 20:26:22,758 - INFO - [24/39] Processing: /m/05zd8
+2026-01-05 20:26:23,125 - INFO - ✓ Successfully fetched data for: /m/05zd8
+2026-01-05 20:26:23,126 - INFO - Waiting 3.1s before next request...
+2026-01-05 20:26:26,180 - INFO - [25/39] Processing: /m/02vkbbf
+2026-01-05 20:26:26,540 - INFO - ✓ Successfully fetched data for: /m/02vkbbf
+2026-01-05 20:26:26,540 - INFO - Waiting 4.1s before next request...
+2026-01-05 20:26:30,647 - INFO - [26/39] Processing: /g/11j317n2h0
+2026-01-05 20:26:30,982 - WARNING - No data returned for term: /g/11j317n2h0
+2026-01-05 20:26:30,983 - INFO - Waiting 3.6s before next request...
+2026-01-05 20:26:34,610 - INFO - [27/39] Processing: /m/01fsrg
+2026-01-05 20:26:34,963 - INFO - ✓ Successfully fetched data for: /m/01fsrg
+2026-01-05 20:26:34,963 - INFO - Waiting 3.8s before next request...
+2026-01-05 20:26:38,756 - INFO - [28/39] Processing: /m/014xsg
+2026-01-05 20:26:39,114 - INFO - ✓ Successfully fetched data for: /m/014xsg
+2026-01-05 20:26:39,114 - INFO - Waiting 5.4s before next request...
+2026-01-05 20:26:44,479 - INFO - [29/39] Processing: /m/0272pyx
+2026-01-05 20:26:44,834 - INFO - ✓ Successfully fetched data for: /m/0272pyx
+2026-01-05 20:26:44,835 - INFO - Waiting 4.1s before next request...
+2026-01-05 20:26:48,984 - INFO - [30/39] Processing: /m/0f0jq
+2026-01-05 20:26:49,335 - INFO - ✓ Successfully fetched data for: /m/0f0jq
+2026-01-05 20:26:49,335 - INFO - Waiting 3.6s before next request...
+2026-01-05 20:26:52,920 - INFO - [31/39] Processing: /m/0hkst
+2026-01-05 20:26:53,346 - INFO - ✓ Successfully fetched data for: /m/0hkst
+2026-01-05 20:26:53,346 - INFO - Waiting 5.0s before next request...
+2026-01-05 20:26:58,303 - INFO - [32/39] Processing: /m/05y_5p
+2026-01-05 20:26:58,784 - INFO - ✓ Successfully fetched data for: /m/05y_5p
+2026-01-05 20:26:58,785 - INFO - Waiting 5.0s before next request...
+2026-01-05 20:27:03,773 - INFO - [33/39] Processing: /g/1235w5lb
+2026-01-05 20:27:04,177 - INFO - ✓ Successfully fetched data for: /g/1235w5lb
+2026-01-05 20:27:04,177 - INFO - Waiting 4.3s before next request...
+2026-01-05 20:27:08,448 - INFO - [34/39] Processing: /g/11j8qrbycd
+2026-01-05 20:27:08,794 - INFO - ✓ Successfully fetched data for: /g/11j8qrbycd
+2026-01-05 20:27:08,794 - INFO - Waiting 3.7s before next request...
+2026-01-05 20:27:12,485 - INFO - [35/39] Processing: /g/121lmsp6
+2026-01-05 20:27:12,823 - WARNING - No data returned for term: /g/121lmsp6
+2026-01-05 20:27:12,824 - INFO - Waiting 5.0s before next request...
+2026-01-05 20:27:17,827 - INFO - [36/39] Processing: /m/0968r1
+2026-01-05 20:27:18,196 - INFO - ✓ Successfully fetched data for: /m/0968r1
+2026-01-05 20:27:18,197 - INFO - Waiting 4.2s before next request...
+2026-01-05 20:27:22,439 - INFO - [37/39] Processing: /g/1213vf80
+2026-01-05 20:27:22,797 - INFO - ✓ Successfully fetched data for: /g/1213vf80
+2026-01-05 20:27:22,798 - INFO - Waiting 5.5s before next request...
+2026-01-05 20:27:28,324 - INFO - [38/39] Processing: /m/025t89b
+2026-01-05 20:27:28,687 - INFO - ✓ Successfully fetched data for: /m/025t89b
+2026-01-05 20:27:28,687 - INFO - Waiting 3.0s before next request...
+2026-01-05 20:27:31,708 - INFO - [39/39] Processing: /m/05xxpw
+2026-01-05 20:27:32,286 - INFO - ✓ Successfully fetched data for: /m/05xxpw
+2026-01-05 20:27:32,342 - INFO - Saved master file with 166 rows and 156 terms
+2026-01-05 20:27:32,342 - INFO - 💾 Updated master file with 29 new terms
+2026-01-05 20:27:32,346 - INFO - 💾 Created backup: data/trends_results/trends_backup_20260105_202732.csv
+2026-01-05 20:27:32,346 - INFO - Updated queue with 10 remaining terms
+2026-01-05 20:27:32,346 - INFO - ============================================================
+2026-01-05 20:27:32,346 - INFO - Job Summary
+2026-01-05 20:27:32,346 - INFO - ✓ Successful: 29
+2026-01-05 20:27:32,346 - INFO - ✗ Failed: 10
+2026-01-05 20:27:32,346 - INFO - 📊 Total terms in master: 156
+2026-01-05 20:27:32,346 - INFO - 📊 Remaining in queue: 10
+2026-01-05 20:27:32,346 - INFO - ============================================================

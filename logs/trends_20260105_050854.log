@@ -1,0 +1,32 @@
+2026-01-05 05:08:54,511 - INFO - ============================================================
+2026-01-05 05:08:54,511 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-05 05:08:54,511 - INFO - Batch size: 75
+2026-01-05 05:08:54,511 - INFO - ============================================================
+2026-01-05 05:08:54,513 - INFO - Loaded 5 terms from queue
+2026-01-05 05:08:54,513 - INFO - Found 0 already processed terms
+2026-01-05 05:08:54,513 - INFO - Processing batch of 5 new terms
+2026-01-05 05:08:54,690 - INFO - [1/5] Processing: /m/01q82
+2026-01-05 05:08:55,373 - INFO - ✓ Successfully fetched data for: /m/01q82
+2026-01-05 05:08:55,373 - INFO - Waiting 5.0s before next request...
+2026-01-05 05:09:00,370 - INFO - [2/5] Processing: /g/1211cg58
+2026-01-05 05:09:00,807 - INFO - ✓ Successfully fetched data for: /g/1211cg58
+2026-01-05 05:09:00,807 - INFO - Waiting 3.3s before next request...
+2026-01-05 05:09:04,061 - INFO - [3/5] Processing: /m/012_3l
+2026-01-05 05:09:04,405 - INFO - ✓ Successfully fetched data for: /m/012_3l
+2026-01-05 05:09:04,405 - INFO - Waiting 5.1s before next request...
+2026-01-05 05:09:09,549 - INFO - [4/5] Processing: /m/0gfps3
+2026-01-05 05:09:09,938 - INFO - ✓ Successfully fetched data for: /m/0gfps3
+2026-01-05 05:09:09,938 - INFO - Waiting 3.8s before next request...
+2026-01-05 05:09:13,740 - INFO - [5/5] Processing: /g/11gbfbpzht
+2026-01-05 05:09:14,105 - INFO - ✓ Successfully fetched data for: /g/11gbfbpzht
+2026-01-05 05:09:14,114 - INFO - Saved master file with 166 rows and 5 terms
+2026-01-05 05:09:14,114 - INFO - 💾 Updated master file with 5 new terms
+2026-01-05 05:09:14,115 - INFO - 💾 Created backup: data/trends_results/trends_backup_20260105_050914.csv
+2026-01-05 05:09:14,115 - INFO - Updated queue with 0 remaining terms
+2026-01-05 05:09:14,115 - INFO - ============================================================
+2026-01-05 05:09:14,115 - INFO - Job Summary
+2026-01-05 05:09:14,115 - INFO - ✓ Successful: 5
+2026-01-05 05:09:14,115 - INFO - ✗ Failed: 0
+2026-01-05 05:09:14,115 - INFO - 📊 Total terms in master: 5
+2026-01-05 05:09:14,115 - INFO - 📊 Remaining in queue: 0
+2026-01-05 05:09:14,116 - INFO - ============================================================

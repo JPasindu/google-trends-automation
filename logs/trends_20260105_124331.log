@@ -1,0 +1,21 @@
+2026-01-05 12:43:31,999 - INFO - ============================================================
+2026-01-05 12:43:31,999 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-05 12:43:31,999 - INFO - Batch size: 75
+2026-01-05 12:43:31,999 - INFO - ============================================================
+2026-01-05 12:43:32,003 - INFO - Loaded master file with 166 rows and 68 terms
+2026-01-05 12:43:32,003 - INFO - Loaded 98 terms from queue
+2026-01-05 12:43:32,004 - INFO - Found 67 already processed terms
+2026-01-05 12:43:32,004 - INFO - Processing batch of 75 new terms
+2026-01-05 12:43:32,175 - INFO - [1/75] Processing: /g/120jfhdm
+2026-01-05 12:43:38,767 - WARNING - ⚠️ Rate limit hit (429) on term: /g/120jfhdm - will continue on next run
+2026-01-05 12:43:38,767 - WARNING - ⚠️ Rate limit encountered. Stopping this run gracefully.
+2026-01-05 12:43:38,768 - INFO - No new data to add to master file
+2026-01-05 12:43:38,769 - INFO - Updated queue with 98 remaining terms
+2026-01-05 12:43:38,769 - INFO - ============================================================
+2026-01-05 12:43:38,769 - INFO - Job Summary
+2026-01-05 12:43:38,769 - INFO - ✓ Successful: 0
+2026-01-05 12:43:38,769 - INFO - ✗ Failed: 0
+2026-01-05 12:43:38,769 - INFO - 📊 Total terms in master: 68
+2026-01-05 12:43:38,769 - INFO - 📊 Remaining in queue: 98
+2026-01-05 12:43:38,769 - WARNING - ⚠️  Rate limit hit - will resume on next scheduled run (4 hours)
+2026-01-05 12:43:38,769 - INFO - ============================================================

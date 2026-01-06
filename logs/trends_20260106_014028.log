@@ -1,0 +1,48 @@
+2026-01-06 01:40:28,898 - INFO - ============================================================
+2026-01-06 01:40:28,898 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-06 01:40:28,898 - INFO - Batch size: 75
+2026-01-06 01:40:28,898 - INFO - ============================================================
+2026-01-06 01:40:28,905 - INFO - Loaded master file with 166 rows and 156 terms
+2026-01-06 01:40:28,905 - INFO - Loaded 10 terms from queue
+2026-01-06 01:40:28,905 - INFO - Found 154 already processed terms
+2026-01-06 01:40:28,905 - INFO - Processing batch of 10 new terms
+2026-01-06 01:40:29,042 - INFO - [1/10] Processing: /g/11c6t_253c
+2026-01-06 01:40:29,477 - INFO - ✓ Successfully fetched data for: /g/11c6t_253c
+2026-01-06 01:40:29,477 - INFO - Waiting 5.3s before next request...
+2026-01-06 01:40:34,743 - INFO - [2/10] Processing: /g/11g0kd3ygw
+2026-01-06 01:40:35,132 - WARNING - No data returned for term: /g/11g0kd3ygw
+2026-01-06 01:40:35,133 - INFO - Waiting 4.2s before next request...
+2026-01-06 01:40:39,303 - INFO - [3/10] Processing: /g/11fsrbpz7j
+2026-01-06 01:40:39,637 - WARNING - No data returned for term: /g/11fsrbpz7j
+2026-01-06 01:40:39,637 - INFO - Waiting 3.6s before next request...
+2026-01-06 01:40:43,244 - INFO - [4/10] Processing: /m/0462swg
+2026-01-06 01:40:43,545 - INFO - ✓ Successfully fetched data for: /m/0462swg
+2026-01-06 01:40:43,546 - INFO - Waiting 4.7s before next request...
+2026-01-06 01:40:48,224 - INFO - [5/10] Processing: /g/12twkjsql
+2026-01-06 01:40:48,619 - INFO - ✓ Successfully fetched data for: /g/12twkjsql
+2026-01-06 01:40:48,620 - INFO - Waiting 4.5s before next request...
+2026-01-06 01:40:53,083 - INFO - [6/10] Processing: /g/11j317hdsz
+2026-01-06 01:40:53,437 - INFO - ✓ Successfully fetched data for: /g/11j317hdsz
+2026-01-06 01:40:53,438 - INFO - Waiting 3.8s before next request...
+2026-01-06 01:40:57,265 - INFO - [7/10] Processing: /g/11c6t_549p
+2026-01-06 01:40:57,562 - INFO - ✓ Successfully fetched data for: /g/11c6t_549p
+2026-01-06 01:40:57,562 - INFO - Waiting 3.1s before next request...
+2026-01-06 01:41:00,684 - INFO - [8/10] Processing: /g/11h4f8vzqz
+2026-01-06 01:41:00,948 - WARNING - No data returned for term: /g/11h4f8vzqz
+2026-01-06 01:41:00,948 - INFO - Waiting 4.1s before next request...
+2026-01-06 01:41:05,041 - INFO - [9/10] Processing: /g/11j317n2h0
+2026-01-06 01:41:05,337 - INFO - ✓ Successfully fetched data for: /g/11j317n2h0
+2026-01-06 01:41:05,338 - INFO - Waiting 5.7s before next request...
+2026-01-06 01:41:11,014 - INFO - [10/10] Processing: /g/121lmsp6
+2026-01-06 01:41:11,295 - WARNING - No data returned for term: /g/121lmsp6
+2026-01-06 01:41:11,311 - INFO - Saved master file with 166 rows and 162 terms
+2026-01-06 01:41:11,311 - INFO - 💾 Updated master file with 6 new terms
+2026-01-06 01:41:11,315 - INFO - 💾 Created backup: data/trends_results/trends_backup_20260106_014111.csv
+2026-01-06 01:41:11,315 - INFO - Updated queue with 4 remaining terms
+2026-01-06 01:41:11,315 - INFO - ============================================================
+2026-01-06 01:41:11,315 - INFO - Job Summary
+2026-01-06 01:41:11,315 - INFO - ✓ Successful: 6
+2026-01-06 01:41:11,315 - INFO - ✗ Failed: 4
+2026-01-06 01:41:11,315 - INFO - 📊 Total terms in master: 162
+2026-01-06 01:41:11,315 - INFO - 📊 Remaining in queue: 4
+2026-01-06 01:41:11,315 - INFO - ============================================================

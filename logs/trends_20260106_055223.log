@@ -1,0 +1,22 @@
+2026-01-06 05:52:23,707 - INFO - ============================================================
+2026-01-06 05:52:23,707 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-06 05:52:23,707 - INFO - Batch size: 75
+2026-01-06 05:52:23,707 - INFO - ============================================================
+2026-01-06 05:52:23,714 - INFO - Loaded master file with 166 rows and 164 terms
+2026-01-06 05:52:23,714 - INFO - Loaded 2 terms from queue
+2026-01-06 05:52:23,714 - INFO - Found 162 already processed terms
+2026-01-06 05:52:23,715 - INFO - Processing batch of 2 new terms
+2026-01-06 05:52:23,850 - INFO - [1/2] Processing: /g/11g0kd3ygw
+2026-01-06 05:52:24,118 - WARNING - No data returned for term: /g/11g0kd3ygw
+2026-01-06 05:52:24,118 - INFO - Waiting 5.0s before next request...
+2026-01-06 05:52:29,130 - INFO - [2/2] Processing: /g/121lmsp6
+2026-01-06 05:52:29,392 - WARNING - No data returned for term: /g/121lmsp6
+2026-01-06 05:52:29,392 - INFO - No new data to add to master file
+2026-01-06 05:52:29,393 - INFO - Updated queue with 2 remaining terms
+2026-01-06 05:52:29,393 - INFO - ============================================================
+2026-01-06 05:52:29,393 - INFO - Job Summary
+2026-01-06 05:52:29,393 - INFO - ✓ Successful: 0
+2026-01-06 05:52:29,393 - INFO - ✗ Failed: 2
+2026-01-06 05:52:29,393 - INFO - 📊 Total terms in master: 164
+2026-01-06 05:52:29,393 - INFO - 📊 Remaining in queue: 2
+2026-01-06 05:52:29,393 - INFO - ============================================================

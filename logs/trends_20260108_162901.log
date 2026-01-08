@@ -1,0 +1,8 @@
+2026-01-08 16:29:01,860 - INFO - ============================================================
+2026-01-08 16:29:01,860 - INFO - Starting Google Trends fetch job - MASTER FILE MODE
+2026-01-08 16:29:01,860 - INFO - Batch size: 75
+2026-01-08 16:29:01,860 - INFO - ============================================================
+2026-01-08 16:29:01,867 - INFO - Loaded master file with 166 rows and 166 terms
+2026-01-08 16:29:01,867 - INFO - Loaded 0 terms from queue
+2026-01-08 16:29:01,867 - INFO - Found 164 already processed terms
+2026-01-08 16:29:01,867 - INFO - ✅ No pending terms to process. Queue is empty or all terms processed.

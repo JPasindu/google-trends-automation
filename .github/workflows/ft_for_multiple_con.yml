@@ -1,4 +1,4 @@
-name: Topics
+name: Fetch_trends_for_multiple_countries
 
 on:
   schedule:
